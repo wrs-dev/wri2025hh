@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from "next/link";
 import Navigation from '@/components/navigation'
-import IconLinks from "@/components/icons"
+import IconsHH from "@/components/icons/iconsHH"
 import Registration from '@/components/registration';
 import { Disclosure } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
-import Banner from '@/components/banner';
+import Banner25HH from '@/components/banner/wri25HH';
 
 const faqs = [
   {
@@ -61,8 +61,8 @@ export async function getStaticProps() {
   return {
     props: {
       title: "WRI Wheel Rail Interaction Conference | FAQ - Frequently Asked Questions about WRI",
-      description: "Frequently Asked Questions for the 29th Annual Wheel/Rail Interaction Conference (WRI)",
-      socialImage: "/wri2024-social.png" 
+      description: "Frequently Asked Questions for the 30th Annual Wheel/Rail Interaction Conference (WRI)",
+      socialImage: "/wri2025hh-social.png" 
     }
   };
 }
@@ -71,8 +71,8 @@ const faq = () => {
   return (
     <main className="bg-white">
       <Navigation />
-      <Banner />
-      <IconLinks />
+      <Banner25HH />
+      <IconsHH />
       <div className="seminar-about-text" id="faqs">
         <div className="px-12 mx-auto">
           <h2 className="text-6xl font-normal leading-normal text-center pt-11">
@@ -80,7 +80,7 @@ const faq = () => {
           </h2>
         </div>
       </div>
-        <div className="max-w-4xl pb-24 mx-auto divide-y divide-gray-900/10">
+        <div className="max-w-4xl px-4 pb-24 mx-auto divide-y divide-gray-900/10">
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
