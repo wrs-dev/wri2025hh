@@ -22,20 +22,20 @@ const navigation = {
   ],
   support: [
     {
-      name: 'Rail Transit Seminar',
-      href: '/rail-transit-seminar#icons',
+      name: 'WRI 2024 Chicago',
+      href: 'https://wri.wheel-rail-seminars.com',
       target: '_self' },
     {
-      name: 'Principles Course',
+      name: 'WRI 2025 HH Kansas City',
       href: '/principles-course#icons',
       target: '_self',
     },
     {
-      name: 'Heavy Haul Seminar',
+      name: 'WRI 2025 RT Seattle',
       href: '/heavy-haul-seminar#icons',
       target: '_self',
     },
-    { name: 'Info Zone/Expo Zone', href: '/infozone#icons', target: '_self' },
+    { name: 'Info Zone/Expo Zone', href: '#', target: '_self' },
     {
       name: 'Become a Sponsor',
       href: '/2024-Final-Sponsorship-kit.pdf',
@@ -43,13 +43,13 @@ const navigation = {
     },
   ],
   company: [
-    { name: 'Register Now', href: '/register', target: '_blank' },
+    { name: 'Register Soon', href: '#', target: '_blank' },
     {
-      name: 'Seminar Pricing Categories',
-      href: '/#register',
+      name: 'Seminar Pricing Packages',
+      href: '#',
       target: '_self',
     },
-    { name: 'Hotel Reservations', href: '/#hotel', target: '_self' },
+    { name: 'Hotel Reservations', href: '#', target: '_self' },
     { name: 'FAQ', href: '/faq#icons', target: '_self' },
 
     {
@@ -157,7 +157,7 @@ const Footer = () => {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm font-semibold leading-6 text-wri-yellow">
-                  2024 Conference in Chicago
+                  WRI Conferences
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map(item => (
