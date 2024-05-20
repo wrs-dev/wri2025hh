@@ -37,7 +37,7 @@ export default function Home({ title, description, socialImage }) {
           will split into two specialized conferences:
         </p>
         <p className="mb-6">
-          <span className="font-extrabold font-wri">
+          <span className="font-extrabold font-wri text-wri-red">
             WRI 2025 Heavy Haul Conference:
           </span>{' '}
           Specifically tailored for the heavy haul (freight) sector, focusing on
@@ -49,7 +49,7 @@ export default function Home({ title, description, socialImage }) {
         </p>
         <p className="mb-6">
           <span className="font-extrabold font-wri">
-            WRI 2025 Rail Transit Conference:
+          <a className="font-extrabold font-wri" href="https://wri2025rt.wheel-rail-seminars.com/" target="_blank">WRI 2025 Rail Transit Conference:</a>
           </span>{' '}
           Devoted to examining wheel/rail and vehicle/track interaction on light
           rail and subway operations. Next year, the WRI 2025 Rail Transit
