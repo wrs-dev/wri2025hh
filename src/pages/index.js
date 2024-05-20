@@ -1,21 +1,18 @@
 import Navigation from '@/components/navigation';
-import IconLinks from '@/components/icons';
+import IconLinksHH from '@/components/icons/iconsHH';
 import Intro from '@/components/intro';
-import Banner from '@/components/banner';
+import Banner25HH from '@/components/banner/wri25HH';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
-import Schedule from '@/components/schedule';
-import Registration from '@/components/registration';
-import SponsorsCloud from '@/components/sponsors';
 import InterfaceJournal from '@/components/interface-journal';
 import WRIAnnouncements from '@/components/announcements';
-import Hotel from '@/components/hotel';
+import SponsorsCloud from '@/components/sponsors';
 
 export async function getStaticProps() {
   return {
     props: {
-      title: "WRI 2024 | Home",
-      description: "Join us for the 29th Annual Wheel/Rail Interaction Conference (WRI '24) in Chicago, IL. The conference focuses on the complex and critical interaction between the wheel and the rail (vehicle/track).",
-      socialImage: "/wri2024-social.png" // Replace with your social image path
+      title: "WRI 2025 HH | WRI Heavy Haul Conference - Kansas City, MO || Home",
+      description: "Welcome to the WRI 2025 Heavy Haul Conference in Kansas City. Join us for an exciting event focusing on the unique challenges and advancements in the heavy haul (freight) sector.",
+      socialImage: "/wri2025-hh-social.png" 
     }
   };
 }
@@ -24,49 +21,58 @@ export default function Home({ title, description, socialImage }) {
   return (
     <main className="bg-white">
       <Navigation />
-      <Banner />
-      <IconLinks />
-      <div className="pb-40 text-center about-container" id="about">
-        <p>
-          Now in its 29th year, the Wheel/Rail Interaction Conference (WRI '24)
-          will be held in Chicago, IL, the site of the very first conference in
-          1994. The Wheel Rail Interaction Conference is designed to inform and
-          educate professionals who work for railroads, transit agencies,
-          contractors, government regulators, researchers, and consulting firms.
-          The conference focuses on the complex and critical interaction between
-          the wheel and the rail (vehicle/track).
+      <Banner25HH />
+      <IconLinksHH />
+      <div className="pb-40 about-container font-wri" id="about">
+        <h1 className="mt-2 mb-2 text-3xl font-extrabold text-center sm:text-5xl font-wri">
+          Welcome to WRI <span className="font-light font-wri">2025</span> HH{' '}
+        </h1>
+        <h2 className="mb-6 text-4xl font-light text-center sm:text-5xl font-wri text-wri-red">
+          Heavy Haul Conference
+        </h2>
+        <p className="mb-6 justify-left">
+          Now in its 30th year, Wheel Rail Seminars is thrilled to announce some
+          exciting developments for the upcoming WRI Conference in 2025! To
+          better cater to the diverse needs of our attendees, the WRI Conference
+          will split into two specialized conferences:
         </p>
-        <p className="pt-5">
-          {' '}
-          WRI '24 conference is three freestanding seminars:{' '}
-          <em>The Rail Transit Seminar</em> on May 21, the{' '}
-          <em>Principles of Wheel/Rail Interaction</em> on May 22 and the{' '}
-          <em>Heavy Haul Seminar</em> on May 23-24, 2024. We welcome back our
-          Presenting Sponsor for the Rail Transit Seminar -{' '}
-          <a
-            href="https://www.masstransitmag.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mass Transit Magazine
-          </a>{' '}
-          and welcome for the very first time, our new Presenting Sponsor for
-          the Heavy Haul Seminar -{' '}
-          <a
-            href="https://www.rtands.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Railway Track & Structures (RT&S)
-          </a>
-          .
+        <p className="mb-6">
+          <span className="font-extrabold font-wri">
+            WRI 2025 Heavy Haul Conference:
+          </span>{' '}
+          Specifically tailored for the heavy haul (freight) sector, focusing on
+          the unique challenges and advancements in this area of the railroad
+          industry. Next year, the WRI 2025 Heavy Haul Conference will be held in{' '}
+          <span className="font-extrabold font-wri">
+            Kansas City, MO from June 10-12, 2025.
+          </span>
+        </p>
+        <p className="mb-6">
+          <span className="font-extrabold font-wri">
+            WRI 2025 Rail Transit Conference:
+          </span>{' '}
+          Devoted to examining wheel/rail and vehicle/track interaction on light
+          rail and subway operations. Next year, the WRI 2025 Rail Transit
+          Conference will be held in{' '}
+          <span className="font-extrabold font-wri">
+            Seattle, WA in Fall of 2025.
+          </span>
+        </p>
+        <p className="mb-6">
+          Each conference will feature a comprehensive Principles Course
+          meticulously crafted to meet the distinct needs of each discipline. We
+          believe this division will provide an enriched experience for all
+          participants, allowing for deeper insight, targeted discussions, and
+          enhanced networking opportunities.
+        </p>
+        <p className="mb-6">
+          Join us for these exceptional events designed to propel the railroad
+          community forward. Stay tuned for further updates and details on
+          registration!
         </p>
       </div>
       <Intro />
       <InfoZoneSection />
-      <Schedule />
-      <Registration id="registration" />
-      <SponsorsCloud />
       <section className="my-12">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-20">
@@ -75,7 +81,7 @@ export default function Home({ title, description, socialImage }) {
           </div>
         </div>
       </section>
-      <Hotel />
+      <SponsorsCloud />
     </main>
   );
 }

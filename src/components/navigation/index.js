@@ -21,25 +21,17 @@ export default function Navigation() {
 
   const links = [
     {
-      name: 'Rail Transit Seminar',
-      description: 'May 21, 2024',
-      href: '/rail-transit-seminar#icons',
-      icon: 'rail-transit.svg',
-      background: 'bg-wri-blue',
-      isExternal: false,
-    },
-    {
       name: 'Principles Course',
-      description: 'May 22, 2024',
-      href: '/principles-course#icons',
+      description: 'Coming Soon',
+      href: '/#',
       icon: 'principles-icon.svg',
       background: 'bg-wri-green',
       isExternal: false,
     },
     {
       name: 'Heavy Haul Seminar',
-      description: 'May 23-24, 2024',
-      href: '/heavy-haul-seminar#icons',
+      description: 'Coming Soon',
+      href: '/E',
       icon: 'heavy-haul-icon.svg',
       background: 'bg-wri-red',
       isExternal: false,
@@ -137,7 +129,7 @@ export default function Navigation() {
                     </div>
                   ))}
                   <div className="flex flex-col">
-                    <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
+                    {/*<div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
                       <a
                         href="/register"
                         target="_blank"
@@ -153,7 +145,7 @@ export default function Navigation() {
                       >
                         WRI 2024 Schedule
                       </a>
-                    </div>
+                    </div>*/}
                     <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
                       <a
                         href="http://archive.wheel-rail-seminars.com/us/downloads.php"
@@ -168,7 +160,7 @@ export default function Navigation() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a
+          {/*<a
             href="/#register"
             className={`text-sm leading-6 nav-link lg:text-xl ${
               isActive('/#register') ? 'text-wri-red' : 'text-wri-blue'
@@ -199,7 +191,7 @@ export default function Navigation() {
             }`}
           >
             InfoZone
-          </a>
+          </a>*/}
           <a
             href="/faq#icons"
             className={`text-sm leading-6 nav-link lg:text-xl ${
