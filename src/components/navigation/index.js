@@ -205,7 +205,7 @@ export default function Navigation() {
             target="_blank"
             className="text-sm leading-6 nav-link lg:text-xl text-wri-blue"
           >
-            WRS
+            Wheel Rail Seminars
           </a>
           <a
             href="http://www.interfacejournal.com/"
