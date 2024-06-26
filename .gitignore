@@ -70,4 +70,8 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 # Local Netlify folder
+<<<<<<< HEAD
 .netlify
+=======
+.netlify
+>>>>>>> origin/main
