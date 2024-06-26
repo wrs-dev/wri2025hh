@@ -3,8 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import clsx from 'clsx'
 import { useInView } from 'framer-motion'
-
-import { Container } from '@/components/Container'
+import { Container } from '@/components/Container';
 
 const reviews = [
   {
@@ -79,7 +78,7 @@ function StarRating({ rating }) {
           key={index}
           className={clsx(
             'h-5 w-5',
-            rating > index ? 'fill-wrs-blue' : 'fill-gray-300',
+            rating > index ? 'fill-wri-yellow' : 'fill-gray-300',
           )}
         />
       ))}
@@ -216,17 +215,17 @@ function ReviewGrid() {
   )
 }
 
-export function Reviews() {
+export default function Reviews() {
   return (
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="pb-16 pt-20 sm:pb-24 sm:pt-32"
+      className="pb-16 pt-20 sm:pb-0 sm:pt-32"
     >
       <Container>
         <h2
           id="reviews-title"
-          className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
+          className="text-4xl font-wri tracking-tight sm:text-center"
         >
           What are attendees of Wheel Rail Seminars events saying?
         </h2>
