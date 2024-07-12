@@ -34,7 +34,7 @@ export default function Intro() {
                     />
                     <div className="text-sm leading-6">
                       <h2 className="font-sans text-2xl font-bold text-wri-blue">
-                        for Continuing Education
+                        Continuing Education
                       </h2>
                     </div>
                   </div>
@@ -74,7 +74,7 @@ export default function Intro() {
                     />
                     <div className="text-sm leading-6">
                       <h2 className="font-sans text-2xl font-bold text-wri-blue">
-                        for Technical Presentations
+                        Technical Presentations
                       </h2>
                     </div>
                   </div>
@@ -113,7 +113,7 @@ export default function Intro() {
                     />
                     <div className="text-sm leading-6">
                       <h2 className="font-sans text-2xl font-bold text-wri-blue">
-                        for Professional Networking
+                        Professional Networking
                       </h2>
                     </div>
                   </div>
