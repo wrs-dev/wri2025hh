@@ -2,6 +2,7 @@ import Navigation from '@/components/navigation';
 import IconLinksHH from '@/components/icons/iconsHH';
 import Intro from '@/components/intro';
 import Banner25HH from '@/components/banner/wri25HH';
+import Reviews from '@/components/reviews';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
 import InterfaceJournal from '@/components/interface-journal';
 import WRIAnnouncements from '@/components/announcements';
@@ -72,6 +73,7 @@ export default function Home({ title, description, socialImage }) {
         </p>
       </div>
       <Intro />
+      <Reviews />
       <InfoZoneSection />
       <section className="my-12">
         <div className="container mx-auto">
