@@ -4,7 +4,15 @@ const nextConfig = {
   images: {
     domains: ["a-us.storyblok.com", "interfacejournal.com"], 
   },
-  // Add any other Next.js config options here
+  // Netlify Forms support
+  async rewrites() {
+    return [
+      {
+        source: '/:path*',
+        destination: '/_next/static/forms/:path*',
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

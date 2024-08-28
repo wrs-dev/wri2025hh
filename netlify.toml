@@ -5,5 +5,16 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[dev]
+  framework = "next"
+
 [build.environment]
   NEXT_USE_NETLIFY_EDGE = "true"
