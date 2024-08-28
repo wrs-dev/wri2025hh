@@ -6,7 +6,7 @@ const nextConfig = {
   },
 };
 
-export default async function() {
+module.exports = async () => {
   const { withNetlify } = await import('@netlify/plugin-nextjs/dist/index.js');
   return withNetlify(nextConfig);
-}
+};
