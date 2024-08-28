@@ -1,2 +1,4 @@
 /us/index.php / 301
-/*    /index.html   200
+
+# For all other routes, let Next.js handle the routing
+/* /.netlify/functions/next_serverless_function 200
