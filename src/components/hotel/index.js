@@ -13,7 +13,7 @@ export default function Hotel() {
             <div className="grid grid-cols-1">
               <figure>
                 <Image
-                  src="/westin-kc-hotel-web.jpeg"
+                  src="/westin-kc-hotel-web.webp"
                   alt="Westin Kansas City at Crown Center"
                   width={400}
                   height={200}
