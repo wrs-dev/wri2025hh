@@ -2,14 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["a-us.storyblok.com", "interfacejournal.com"], 
+    domains: ["a-us.storyblok.com", "interfacejournal.com"],
   },
-  // Netlify Forms support
   async rewrites() {
     return [
       {
-        source: '/:path*',
-        destination: '/_next/static/forms/:path*',
+        source: "/:path*",
+        destination: "/_next/static/forms/:path*",
       },
     ];
   },

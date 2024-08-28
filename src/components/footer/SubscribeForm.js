@@ -8,7 +8,7 @@ const SubscribeForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/netlify-forms', {
+      const response = await fetch('/api/netlify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 'form-name': 'subscribe', email }),
