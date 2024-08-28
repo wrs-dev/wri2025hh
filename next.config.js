@@ -4,14 +4,6 @@ const nextConfig = {
   images: {
     domains: ["a-us.storyblok.com", "interfacejournal.com"],
   },
-  async rewrites() {
-    return [
-      {
-        source: "/:path*",
-        destination: "/_next/static/forms/:path*",
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;

@@ -8,10 +8,10 @@ const SubscribeForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/netlify', {
+      const response = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 'form-name': 'subscribe', email }),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ 'form-name': 'subscribe', email }).toString(),
       });
 
       if (response.ok) {
@@ -38,16 +38,20 @@ const SubscribeForm = () => {
       <form
         onSubmit={handleSubmit}
         name="subscribe"
+        method="POST"
         data-netlify="true"
+        data-netlify-honeypot="bot-field"
         className="mt-6 sm:flex sm:max-w-md"
       >
         <input type="hidden" name="form-name" value="subscribe" />
+        <div hidden>
+          <input name="bot-field" />
+        </div>
         <input
           type="email"
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          data-1p-ignore="true"
           className="w-full min-w-0 appearance-none rounded-md border-0 bg-white px-3 py-1.5 text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:w-64 sm:text-sm sm:leading-6 xl:w-full"
           placeholder="Enter your email"
           required
