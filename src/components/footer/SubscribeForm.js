@@ -8,10 +8,10 @@ const SubscribeForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/', {
+      const response = await fetch(window.location.href, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ 'form-name': 'subscribe', email }).toString(),
+        body: encode({ 'form-name': 'subscribe', email }),
       });
 
       if (response.ok) {
@@ -26,6 +26,12 @@ const SubscribeForm = () => {
     }
   };
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   return (
     <div className="mt-10 xl:mt-0 subscribe-form">
       <h3 className="text-sm font-semibold leading-6 text-white">
@@ -38,8 +44,9 @@ const SubscribeForm = () => {
       <form
         onSubmit={handleSubmit}
         name="subscribe"
-        method="POST"
+        method="post"
         data-netlify="true"
+        netlify
         data-netlify-honeypot="bot-field"
         className="mt-6 sm:flex sm:max-w-md"
       >
