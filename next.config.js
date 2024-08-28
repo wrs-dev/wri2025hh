@@ -4,9 +4,7 @@ const nextConfig = {
   images: {
     domains: ["a-us.storyblok.com", "interfacejournal.com"], 
   },
+  // Add any other Next.js config options here
 };
 
-module.exports = async () => {
-  const { withNetlify } = await import('@netlify/plugin-nextjs');
-  return withNetlify(nextConfig);
-};
+module.exports = nextConfig;
