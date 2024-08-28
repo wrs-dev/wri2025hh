@@ -4,26 +4,23 @@ const SubscribeForm = () => {
   const [email, setEmail] = useState('');
   const [thankYouMessage, setThankYouMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    setThankYouMessage('Submitting...');
 
-    try {
-      const response = await fetch('/.netlify/functions/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.ok) {
-        setThankYouMessage('Thank you for subscribing!');
-        setEmail('');
-      } else {
-        throw new Error('Form submission failed');
-      }
-    } catch (error) {
-      console.error('Error:', error);
+    // Let Netlify handle the form submission
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ 'form-name': 'subscribe', email }).toString()
+    })
+    .then(() => {
+      setThankYouMessage('Thank you for subscribing!');
+      setEmail('');
+    })
+    .catch(() => {
       setThankYouMessage('An error occurred. Please try again.');
-    }
+    });
   };
 
   return (
