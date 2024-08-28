@@ -7,6 +7,7 @@ import InfoZoneSection from '@/components/infozone/infoZoneSection';
 import InterfaceJournal from '@/components/interface-journal';
 import WRIAnnouncements from '@/components/announcements';
 import SponsorsCloud from '@/components/sponsors';
+import Hotel from '@/components/hotel';
 
 export async function getStaticProps() {
   return {
@@ -84,6 +85,7 @@ export default function Home({ title, description, socialImage }) {
         </div>
       </section>
       <SponsorsCloud />
+      <Hotel />
     </main>
   );
 }

@@ -7,17 +7,18 @@ export default function Hotel() {
       <div className="container">
         <div className="grid row">
           <div className="col">
-            <h1 className="mb-4 text-2xl font-bold">
-              WRI ’24 – Host Hotel – Book your Room
+            <h1 className="mb-4 relative inline-block capitalize text-xl md:text-2xl font-bold text-black after:absolute after:bg-wri-yellow after:bottom-0 after:left-0 after:h-0.5 after:w-full">
+              WRI 2025HH HOST HOTEL
             </h1>
             <div className="grid grid-cols-1">
               <figure>
                 <Image
-                  src="/loews-hotel-web.jpeg"
+                  src="/loews-hotel-web.webp"
                   alt="loews-hotel"
                   width={'400'}
-                  height={'200'}
-                  className="w-full h-auto"
+                  height={'267'}
+                  className="w-full h-auto rounded-xl"
+                  loading="lazy"
                 />
               </figure>
               <div>
@@ -30,7 +31,7 @@ export default function Hotel() {
                 <a
                   href="https://www.loewshotels.com/chicago-ohare/group-wheel-rail-interaction-24"
                   target="_blank"
-                  className="inline-block px-4 py-2 text-xl font-bold border-4 shadow-xl rounded-xl bg-wri-yellow hover:bg-wri-green border-wri-dark-blue hover:border-wri-green text-wri-dark-blue hover:text-white"
+                  className="hidden inline-block px-4 py-2 text-xl font-bold border-4 shadow-xl rounded-xl bg-wri-yellow hover:bg-wri-green border-wri-dark-blue hover:border-wri-green text-wri-dark-blue hover:text-white"
                 >
                   Reservations
                 </a>
@@ -42,30 +43,16 @@ export default function Hotel() {
             <h2>Making Reservations/Discounted Rate:</h2>
             <p className="text-base mb-3.5">
               {' '}
-              You can use Loews Chicago O'Hare Hotel's secure online reservation
-              system to book, modify or cancel your reservation{' '}
-              <a
-                className="text-red-500"
-                href="https://www.loewshotels.com/chicago-ohare/group-wheel-rail-interaction-24"
-                target="_blank"
-              >
-                here
-              </a>
-              .
+              The Conference room Block at the Loews Chicago O'Hare Hotel has expired.  There are a limited number of rooms available through the Conference Coordinator.
             </p>
             <p className="text-base mb-3.5">
-              Our Discounted Room Rate is <b>$199.00</b> per night.
+            If you require a hotel room for WRI '24, please contact:
             </p>
             <p className="text-base mb-3.5">
-              Reservations must be received on or before the cut-off date of
-              Friday, May 10, 2024. Once our room block is full, you may not be
-              able to receive our special rate.
+            Brandon Koenig at <a href="mailto:brandon@wheel-rail-seminars.com"> brandon@wheel-rail-seminars.com</a>
             </p>
             <p className="text-base mb-3.5">
-              If you require additional reservations assistance, you may contact
-              the hotel reservation department at 1-847-544-5300 and refer to
-              the group by name: 
-              <b>Wheel Rail Interaction Conference 2024.</b>
+            The Remaining Rooms will be on a first come basis and can not be guaranteed at this late date.
             </p>
             <h2>Room Deposits/Guarantees:</h2>
             <p className="text-base mb-3.5">
