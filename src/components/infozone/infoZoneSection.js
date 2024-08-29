@@ -12,7 +12,7 @@ export default function InfoZoneSection() {
               <li>
                 <div className="text-4xl text-wri-blue">ExpoZone</div>
                 <span className="block pb-10 text-wri-blue">
-                  during the entire <br /> WRI 2024 Conference
+                  {/* removed text but kept yellow underline - temporary */}
                 </span>
                 <p>
                   The ExpoZone is a strategically designed space within the WRI
@@ -45,7 +45,7 @@ export default function InfoZoneSection() {
               <li>
                 <div className="text-4xl text-wri-blue">InfoZone</div>
                 <span className="block pb-10 text-wri-blue">
-                  included with the <br /> Heavy Haul Seminar
+                  {/* removed text but kept yellow underline - temporary */}
                 </span>
                 <p>
                   Our InfoZone partners offer high-quality technical information on

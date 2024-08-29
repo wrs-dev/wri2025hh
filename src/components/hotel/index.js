@@ -83,7 +83,7 @@ export default function Hotel() {
                 Reservation must be canceled by 5:00pm, local hotel time, two
                 days prior to arrival date.
               </b>
-              Failure to cancel by 5:00pm, 48 hours prior will result in the
+              {' '}Failure to cancel by 5:00pm, 48 hours prior will result in the
               loss of one night's room and tax on your credit card.
             </p>
           </div>
