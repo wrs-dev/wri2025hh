@@ -48,9 +48,7 @@ export default function InfoZoneSection() {
                   {/* removed text but kept yellow underline - temporary */}
                 </span>
                 <p>
-                  Our InfoZone partners offer high-quality technical information on
-                  wheel/rail interaction. These sessions are built into the Heavy
-                  Haul Seminar program and designed for small group interaction.{' '}
+                Our InfoZone partners offer high-quality technical information on wheel/rail interaction. These sessions are built into the program and designed for small group interaction.{' '}
                 </p>
                 {/*<Link
                   className="pt-4 underline text-wri-green"
