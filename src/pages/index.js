@@ -1,6 +1,8 @@
 import Navigation from '@/components/navigation';
 import IconLinksHH from '@/components/icons/iconsHH';
 import Intro from '@/components/intro';
+import CallForPapers from '@/components/call-for-papers'
+import SimpleCallForPapers from '@/components/simple-call-for-papers'
 import Banner25HH from '@/components/banner/wri25HH';
 import Reviews from '@/components/reviews';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
@@ -74,6 +76,8 @@ export default function Home({ title, description, socialImage }) {
         </p>
       </div>
       <Intro />
+      <CallForPapers />
+      <SimpleCallForPapers />
       <Reviews />
       <InfoZoneSection />
       <section className="my-12">
