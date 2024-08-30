@@ -1,12 +1,11 @@
 import Image from 'next/image';
-import Head from 'next/head';
 import Link from 'next/link';
 
 export default function CallForPapers() {
     return (
       <div className="bg-white">
-        <div className="py-24 mx-auto max-w-7xl sm:px-6 sm:py-32 lg:px-8">
-          <div className="relative px-6 py-24 overflow-hidden text-center bg-gray-900 shadow-2xl isolate sm:rounded-3xl sm:px-16">
+        <div className="max-w-5xl py-16 mx-auto sm:px-6 sm:py-24 lg:px-8">
+          <div className="relative px-4 py-16 overflow-hidden text-center bg-gray-900 shadow-2xl isolate sm:rounded-3xl sm:px-10">
             <Image
               src="/rail-bridge-bg.jpg"
               alt="Background image of a railroad bridge"
@@ -22,20 +21,20 @@ export default function CallForPapers() {
               }}
             ></div>
             <div className="relative z-20">
-              <h2 className="max-w-2xl mx-auto text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h2 className="max-w-2xl mx-auto text-2xl font-bold tracking-tight text-white sm:text-3xl">
                 Call for Papers
                 <br />
-            WRI 2025 Heavy Haul Conference
+                WRI 2025 Heavy Haul Conference
               </h2>
-              <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-gray-100">
+              <p className="max-w-lg mx-auto mt-4 text-sm leading-6 text-gray-100 sm:text-base sm:leading-7">
                 Wheel Rail Seminars is looking for candidates to present at the June 10-12 Wheel/Rail Interaction Heavy Haul Conference (WRI 2025 HH) that will be held in Kansas City, MO. If you are interested in being considered for presenting at the conference, please fill out the form using the link below.
               </p>
-              <div className="flex items-center justify-center mt-10">
+              <div className="flex items-center justify-center mt-8">
                 <Link 
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfM5zSSU6PkupRrACyp8EIhpahhtADraVBlKRRC4H5kC8AwoA/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 text-base font-semibold transition-colors duration-200 transform bg-white border-2 border-white shadow-sm rounded-xl text-wri-red hover:bg-wri-red hover:text-white hover:scale-105"
+                  className="px-6 py-3 text-sm font-semibold transition-colors duration-200 transform bg-white border-2 border-white shadow-sm rounded-xl text-wri-red hover:bg-wri-red hover:text-white hover:scale-105"
                 >
                   Get Started
                 </Link>
