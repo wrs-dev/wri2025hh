@@ -1,12 +1,14 @@
 import Navigation from '@/components/navigation';
 import IconLinksHH from '@/components/icons/iconsHH';
 import Intro from '@/components/intro';
+import CallForPapers from '@/components/call-for-papers'
 import Banner25HH from '@/components/banner/wri25HH';
 import Reviews from '@/components/reviews';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
 import InterfaceJournal from '@/components/interface-journal';
 import WRIAnnouncements from '@/components/announcements';
 import SponsorsCloud from '@/components/sponsors';
+import Hotel from '@/components/hotel';
 
 export async function getStaticProps() {
   return {
@@ -73,6 +75,7 @@ export default function Home({ title, description, socialImage }) {
         </p>
       </div>
       <Intro />
+      <CallForPapers />
       <Reviews />
       <InfoZoneSection />
       <section className="my-12">
@@ -83,6 +86,7 @@ export default function Home({ title, description, socialImage }) {
           </div>
         </div>
       </section>
+      <Hotel />
       <SponsorsCloud />
     </main>
   );

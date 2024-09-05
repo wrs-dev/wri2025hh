@@ -167,7 +167,7 @@ export default function Navigation() {
             }`}
           >
             Package Pricing
-          </a>
+          </a>*/}
           <a
             href="/#hotel"
             className={`text-sm leading-6 nav-link lg:text-xl ${
@@ -175,7 +175,7 @@ export default function Navigation() {
             }`}
           >
             Hotel Reservations
-          </a>
+          </a>{/*
           <a
             href="/sponsors#icons"
             className={`text-sm leading-6 nav-link lg:text-xl ${
