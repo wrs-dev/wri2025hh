@@ -39,9 +39,9 @@ export default function WRIAnnouncements() {
           />
           <p>
             A generous gift from Gordon Bachinsky, Founder of Wheel Rail seminars, is broadening the learning experiences and professional networks for students in SFU's School of Sustainable Energy Engineering (SEE).{" "}
-            <Link href="https://www.linkedin.com/pulse/fueling-future-donors-innovative-award-ollvc/?trackingId=Jpu2PxgBKVXbS1yCDMHI8Q%3D%3D" passHref legacyBehavior>
+            <Link href="https://give.sfu.ca/fueling-the-future" passHref legacyBehavior>
               <a target="_blank" rel="noopener noreferrer" className="text-wri-red">
-                Read the article (requires log in)...
+                Read the article...
               </a>
             </Link>
           </p>
