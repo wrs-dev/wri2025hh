@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 const SubscribeForm = () => {
   const [email, setEmail] = useState('');
   const [thankYouMessage, setThankYouMessage] = useState('');
@@ -8,17 +6,18 @@ const SubscribeForm = () => {
     e.preventDefault();
     setThankYouMessage('Submitting...');
 
-    // Let Netlify handle the form submission
+    const form = e.target;
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({ 'form-name': 'subscribe', email }).toString()
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
     })
     .then(() => {
       setThankYouMessage('Thank you for subscribing!');
       setEmail('');
     })
-    .catch(() => {
+    .catch((error) => {
+      console.error('Error:', error);
       setThankYouMessage('An error occurred. Please try again.');
     });
   };
@@ -66,5 +65,3 @@ const SubscribeForm = () => {
     </div>
   );
 };
-
-export default SubscribeForm;
