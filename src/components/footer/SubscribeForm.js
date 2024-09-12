@@ -1,4 +1,6 @@
-const SubscribeForm = () => {
+import React, { useState } from 'react';
+
+  export const SubscribeForm = () => {
   const [email, setEmail] = useState('');
   const [thankYouMessage, setThankYouMessage] = useState('');
 
