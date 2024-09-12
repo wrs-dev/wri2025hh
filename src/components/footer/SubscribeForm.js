@@ -1,34 +1,9 @@
+'use client'
 import React, { useState } from 'react';
 
 export default function SubscribeForm() {
   const [email, setEmail] = useState('');
-  const [thankYouMessage, setThankYouMessage] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setThankYouMessage('Submitting...');
-
-    const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(new FormData(form)).toString()
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      return response.text();
-    })
-    .then(() => {
-      setThankYouMessage('Thank you for subscribing!');
-      setEmail('');
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      setThankYouMessage('An error occurred. Please try again.');
-    });
-  };
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
     <div className="mt-10 xl:mt-0 subscribe-form">
@@ -39,19 +14,25 @@ export default function SubscribeForm() {
         Receive the latest Wheel/Rail news, articles and announcements,
         sent to your inbox weekly. No spam. Unsubscribe anytime.
       </p>
+      {isSubmitted && (
+        <div className="mb-4 text-green-500">
+          Thank you for subscribing!
+        </div>
+      )}
       <form
-        onSubmit={handleSubmit}
         name="subscribe"
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        action="/thank-you"
+        netlify
         className="mt-6 sm:flex sm:max-w-md"
       >
         <input type="hidden" name="form-name" value="subscribe" />
-        <div hidden>
-          <input name="bot-field" />
-        </div>
+        <p hidden>
+          <label>
+            Don't fill this out: <input name="bot-field" />
+          </label>
+        </p>
         <input
           type="email"
           name="email"
@@ -70,7 +51,6 @@ export default function SubscribeForm() {
           </button>
         </div>
       </form>
-      {thankYouMessage && <p className="mt-2 text-sm text-wri-yellow">{thankYouMessage}</p>}
     </div>
   );
 }
