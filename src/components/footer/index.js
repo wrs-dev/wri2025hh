@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import NavigationSection from './NavigationSection';
 import SocialLinks from './SocialLinks';
-import SubscribeForm from './SubscribeForm';
+import { SubscribeForm } from './SubscribeForm';
 
 const navigation = {
   solutions: [
