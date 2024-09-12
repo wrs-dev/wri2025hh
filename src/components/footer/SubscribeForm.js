@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-  export const SubscribeForm = () => {
+export default function SubscribeForm() {
   const [email, setEmail] = useState('');
   const [thankYouMessage, setThankYouMessage] = useState('');
 
@@ -13,6 +13,12 @@ import React, { useState } from 'react';
       method: 'POST',
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.text();
     })
     .then(() => {
       setThankYouMessage('Thank you for subscribing!');
@@ -39,6 +45,7 @@ import React, { useState } from 'react';
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        action="/thank-you"
         className="mt-6 sm:flex sm:max-w-md"
       >
         <input type="hidden" name="form-name" value="subscribe" />
@@ -66,4 +73,4 @@ import React, { useState } from 'react';
       {thankYouMessage && <p className="mt-2 text-sm text-wri-yellow">{thankYouMessage}</p>}
     </div>
   );
-};
+}
