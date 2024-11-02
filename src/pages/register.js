@@ -8,7 +8,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: "WRI 2024 | Registration",
-      description: "Registration for the 29th Annual Wheel/Rail Interaction Conference (WRI)",
+      description: "Registration for the 30th Annual Wheel/Rail Interaction Conference (WRI)",
       socialImage: "/wri2024-social.png" 
     }
   };

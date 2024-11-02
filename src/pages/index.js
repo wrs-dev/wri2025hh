@@ -1,7 +1,8 @@
 import Navigation from '@/components/navigation';
 import IconLinksHH from '@/components/icons/iconsHH';
 import Intro from '@/components/intro';
-import CallForPapers from '@/components/call-for-papers'
+import CallForPapers from '@/components/call-for-papers';
+import Registration from '@/components/registration';
 import Banner25HH from '@/components/banner/wri25HH';
 import Reviews from '@/components/reviews';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
@@ -13,10 +14,12 @@ import Hotel from '@/components/hotel';
 export async function getStaticProps() {
   return {
     props: {
-      title: "WRI 2025 HH | WRI Heavy Haul Conference - Kansas City, MO || Home",
-      description: "Welcome to the WRI 2025 Heavy Haul Conference in Kansas City. Join us for an exciting event focusing on the unique challenges and advancements in the heavy haul (freight) sector.",
-      socialImage: "/wri2025-hh-social.png" 
-    }
+      title:
+        'WRI 2025 HH | WRI Heavy Haul Conference - Kansas City, MO || Home',
+      description:
+        'Welcome to the WRI 2025 Heavy Haul Conference in Kansas City. Join us for an exciting event focusing on the unique challenges and advancements in the heavy haul (freight) sector.',
+      socialImage: '/wri2025-hh-social.png',
+    },
   };
 }
 
@@ -45,20 +48,27 @@ export default function Home({ title, description, socialImage }) {
           </span>{' '}
           Specifically tailored for the heavy haul (freight) sector, focusing on
           the unique challenges and advancements in this area of the railroad
-          industry. Next year, the WRI 2025 Heavy Haul Conference will be held in{' '}
+          industry. Next year, the WRI 2025 Heavy Haul Conference will be held
+          in{' '}
           <span className="font-extrabold font-wri">
             Kansas City, MO from June 10-12, 2025.
           </span>
         </p>
         <p className="mb-6">
           <span className="font-extrabold font-wri">
-          <a className="font-extrabold font-wri" href="https://wri2025rt.wheel-rail-seminars.com/" target="_blank">WRI 2025 Rail Transit Conference:</a>
+            <a
+              className="font-extrabold font-wri"
+              href="https://wri2025rt.wheel-rail-seminars.com/"
+              target="_blank"
+            >
+              WRI 2025 Rail Transit Conference:
+            </a>
           </span>{' '}
           Devoted to examining wheel/rail and vehicle/track interaction on light
           rail and subway operations. Next year, the WRI 2025 Rail Transit
           Conference will be held in{' '}
           <span className="font-extrabold font-wri">
-          Seattle, WA from August 26-28, 2025.
+            Seattle, WA from August 26-28, 2025.
           </span>
         </p>
         <p className="mb-6">
@@ -76,6 +86,7 @@ export default function Home({ title, description, socialImage }) {
       </div>
       <Intro />
       <CallForPapers />
+      <Registration />
       <Reviews />
       <InfoZoneSection />
       <section className="my-12">
