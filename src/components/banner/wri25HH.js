@@ -19,7 +19,7 @@ const Banner2025RT = () => {
           <h1 className="mb-1 text-4xl text-center text-white sm:text-6xl text-shadow-outline">
             Kansas City, MO
           </h1>
-          <h1 className="text-4xl text-center text-white sm:text-6xl text-shadow-outline">
+          <h1 className="mb-8 text-4xl text-center text-white sm:text-6xl text-shadow-outline">
             June 10-12, 2025
           </h1>
           <RegisterButton />
