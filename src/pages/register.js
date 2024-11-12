@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Navigation from '@/components/navigation';
-import Banner25HH from '@/components/banner/wri25HH';
+import Banner25HH from '@/components/banner/wri25HH-no-button';
 import Registration from '@/components/registration';
 import CventWidget from '@/components/CventWidget';
 import Banner2 from '@/components/banner2';
