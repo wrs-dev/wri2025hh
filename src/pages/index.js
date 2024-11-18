@@ -1,9 +1,9 @@
 import Navigation from '@/components/navigation';
+import Banner25HH from '@/components/banner/wri25HH';
 import IconLinksHH from '@/components/icons/iconsHH';
 import Intro from '@/components/intro';
 import CallForPapers from '@/components/call-for-papers';
 import Registration from '@/components/registration';
-import Banner25HH from '@/components/banner/wri25HH';
 import Reviews from '@/components/reviews';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
 import InterfaceJournal from '@/components/interface-journal';
@@ -98,7 +98,7 @@ export default function Home({ title, description, socialImage }) {
         </div>
       </section>
       <Hotel />
-      <SponsorsCloud />
+      {/*<SponsorsCloud />*/}
     </main>
   );
 }
