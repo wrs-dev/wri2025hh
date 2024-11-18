@@ -1,6 +1,6 @@
 import Navigation from '@/components/navigation';
 import Banner25HH from '@/components/banner/wri25HH';
-import IconLinksHH from '@/components/icons/iconsHH';
+import IconsHH from '@/components/icons/iconsHH-nolink';
 import Intro from '@/components/intro';
 import CallForPapers from '@/components/call-for-papers';
 import Registration from '@/components/registration';
@@ -28,7 +28,7 @@ export default function Home({ title, description, socialImage }) {
     <main className="bg-white">
       <Navigation />
       <Banner25HH />
-      <IconLinksHH />
+      <IconsHH />
       <div className="pb-40 about-container font-wri" id="about">
         <h1 className="mt-2 mb-2 text-2xl font-extrabold text-center sm:text-5xl font-wri">
           Welcome to WRI <span className="font-light font-wri">2025</span> HH{' '}
@@ -36,6 +36,7 @@ export default function Home({ title, description, socialImage }) {
         <h2 className="mb-6 text-3xl font-light text-center sm:text-5xl font-wri text-wri-red">
           Heavy Haul Conference
         </h2>
+        <h3 className="mt-12 mb-12 font-light text-center text-1xl sm:text-4xl font-wri">Speakers and agenda to be announced soon!</h3>
         <p className="mb-6 justify-left">
           Now in its 30th year, Wheel Rail Seminars is thrilled to announce some
           exciting developments for the upcoming WRI Conference in 2025! To
