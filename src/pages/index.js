@@ -38,52 +38,16 @@ export default function Home({ title, description, socialImage }) {
         </h2>
         <h3 className="mt-12 mb-12 font-light text-center text-1xl sm:text-4xl font-wri">Speakers and agenda to be announced soon!</h3>
         <p className="mb-6 justify-left">
-          Now in its 30th year, Wheel Rail Seminars is thrilled to announce some
-          exciting developments for the upcoming WRI Conference in 2025! To
-          better cater to the diverse needs of our attendees, the WRI Conference
-          will split into two specialized conferences:
-        </p>
-        <p className="mb-6">
+        Welcome to the 30th Anniversary of the Wheel Rail Interaction Conference.{' '}
           <span className="font-extrabold font-wri text-wri-red">
-            WRI 2025 Heavy Haul Conference:
+            WRI 2025 Heavy Haul Conference
           </span>{' '}
-          Specifically tailored for the heavy haul (freight) sector, focusing on
-          the unique challenges and advancements in this area of the railroad
-          industry. Next year, the WRI 2025 Heavy Haul Conference will be held
-          in{' '}
+          is specifically tailored for the heavy haul (freight) sector, focusing on the unique challenges and advancements in this area of the railroad industry. WRI 2025 Heavy Haul Conference will be held in{' '}
           <span className="font-extrabold font-wri">
             Kansas City, MO from June 10-12, 2025.
           </span>
         </p>
-        <p className="mb-6">
-          <span className="font-extrabold font-wri">
-            <a
-              className="font-extrabold font-wri"
-              href="https://wri2025rt.wheel-rail-seminars.com/"
-              target="_blank"
-            >
-              WRI 2025 Rail Transit Conference:
-            </a>
-          </span>{' '}
-          Devoted to examining wheel/rail and vehicle/track interaction on light
-          rail and subway operations. Next year, the WRI 2025 Rail Transit
-          Conference will be held in{' '}
-          <span className="font-extrabold font-wri">
-            Seattle, WA from August 26-28, 2025.
-          </span>
-        </p>
-        <p className="mb-6">
-          Each conference will feature a comprehensive Principles Course
-          meticulously crafted to meet the distinct needs of each discipline. We
-          believe this division will provide an enriched experience for all
-          participants, allowing for deeper insight, targeted discussions, and
-          enhanced networking opportunities.
-        </p>
-        <p className="mb-6">
-          Join us for these exceptional events designed to propel the railroad
-          community forward. Stay tuned for further updates and details on
-          registration!
-        </p>
+        
       </div>
       <Intro />
       <CallForPapers />
