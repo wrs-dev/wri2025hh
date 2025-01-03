@@ -1,5 +1,12 @@
 import React from 'react';
-import SponsorRegisterButton from '@/components/buttons/sponsor-register-button';
+import SponsorRegisterButtonSilver from '@/components/buttons/sponsor-register-button-silver';
+import SponsorRegisterButtonDoubleSilver from '@/components/buttons/sponsor-register-button-double-silver';
+import SponsorRegisterButtonGold from '@/components/buttons/sponsor-register-button-gold';
+import SponsorRegisterButtonDoubleGold from '@/components/buttons/sponsor-register-button-double-gold';
+import SponsorRegisterButtonPlatinum from '@/components/buttons/sponsor-register-button-platinum';
+import SponsorRegisterButtonDoublePlatinum from '@/components/buttons/sponsor-register-button-double-platinum';
+import SponsorRegisterButtonInfoZone from '@/components/buttons/sponsor-register-button-infozone';
+import SponsorRegisterButtonDoubleInfoZone from '@/components/buttons/sponsor-register-button-double-infozone';
 
 export default function SponsorPackages() {
   return (
@@ -33,7 +40,7 @@ export default function SponsorPackages() {
                 <li>Individual social media recognition</li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonPlatinum />
               </div>
             </div>
           </div>
@@ -65,7 +72,7 @@ export default function SponsorPackages() {
                 </li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonDoublePlatinum />
               </div>
             </div>
           </div>
@@ -90,7 +97,7 @@ export default function SponsorPackages() {
                 </li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonGold />
               </div>
             </div>
           </div>
@@ -122,7 +129,7 @@ export default function SponsorPackages() {
                 </li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonDoubleGold />
               </div>
             </div>
           </div>
@@ -165,7 +172,7 @@ export default function SponsorPackages() {
                 <li>Social media recognition</li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonSilver />
               </div>
             </div>
           </div>
@@ -214,7 +221,7 @@ export default function SponsorPackages() {
                 </li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonDoubleSilver />
               </div>
             </div>
           </div>
@@ -318,7 +325,7 @@ export default function SponsorPackages() {
                 <li>Valuable insights for your product or service</li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonInfoZone />
               </div>
             </div>
           </div>
@@ -356,7 +363,7 @@ export default function SponsorPackages() {
                 <li>Proven track record of participant satisfaction</li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
+                <SponsorRegisterButtonDoubleInfoZone />
               </div>
             </div>
           </div>
