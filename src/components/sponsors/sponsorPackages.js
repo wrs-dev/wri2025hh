@@ -246,8 +246,7 @@ export default function SponsorPackages() {
                     erica@wheel-rail-seminars.com
                 </a>{' '}
                 to purchase.
-                </div>
-            </div>
+              </div>
             </div>
           </div>
         </section>
