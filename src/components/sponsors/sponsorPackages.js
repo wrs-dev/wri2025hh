@@ -241,8 +241,13 @@ export default function SponsorPackages() {
                 </li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
-              </div>
+                Contact{' '}
+                <a href="mailto:erica@wheel-rail-seminars.com">
+                    erica@wheel-rail-seminars.com
+                </a>{' '}
+                to purchase.
+                </div>
+            </div>
             </div>
           </div>
         </section>
@@ -273,8 +278,12 @@ export default function SponsorPackages() {
                 </li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButton />
-              </div>
+                Contact{' '}
+                <a href="mailto:erica@wheel-rail-seminars.com">
+                    erica@wheel-rail-seminars.com
+                </a>{' '}
+                to purchase.
+                </div>
             </div>
           </div>
         </section>
