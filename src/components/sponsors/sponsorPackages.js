@@ -20,7 +20,7 @@ export default function SponsorPackages() {
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-zinc-500 sm:text-3xl">
+              <h2 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
                 Heavy Haul<br />
                 Platinum Sponsorship
               </h2>
@@ -50,7 +50,7 @@ export default function SponsorPackages() {
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-zinc-500 sm:text-3xl">
+              <h2 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
                 Double
                 <br />
                 Platinum Sponsorship
