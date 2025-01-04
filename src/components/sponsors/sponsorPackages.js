@@ -270,7 +270,7 @@ export default function SponsorPackages() {
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$4,000.00</p>
             </div>
             <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes all Double Bronze Level Benefits PLUS:</p>
+              <p className="mb-1 font-semibold">Includes:</p>
               <ul className="ml-6 list-disc">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
