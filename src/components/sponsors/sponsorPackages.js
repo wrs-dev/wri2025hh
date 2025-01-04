@@ -376,7 +376,10 @@ export default function SponsorPackages() {
             the person completing the registration will automatically be registered as an
             attendee. Depending on your chosen sponsorship level, you will be able to register
             additional Sponsor Attendees. If you know who these attendees are, please enter
-            their information now. If not, you can return to this page later to add them.
+            their information now. If not, you can contact {' '}
+                <a href="mailto:erica@wheel-rail-seminars.com">
+                    erica@wheel-rail-seminars.com
+                </a>{' '} later to have us add them.
           </p>
         </section>
       </div>
