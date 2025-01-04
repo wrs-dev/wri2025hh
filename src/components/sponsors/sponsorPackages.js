@@ -379,7 +379,7 @@ export default function SponsorPackages() {
             their information now. If not, you can contact {' '}
                 <a href="mailto:erica@wheel-rail-seminars.com">
                     erica@wheel-rail-seminars.com
-                </a>{' '} to have us add them later .
+                </a>{' '} to have us add them later.
           </p>
         </section>
       </div>
