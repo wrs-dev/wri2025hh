@@ -21,8 +21,8 @@ export default function SponsorPackages() {
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
               <h2 className="text-2xl font-bold leading-tight text-zinc-500 sm:text-3xl">
-                Heavy Haul Platinum<br />
-                Sponsorship
+                Heavy Haul<br />
+                Platinum Sponsorship
               </h2>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$5,500.00</p>
             </div>
@@ -53,7 +53,7 @@ export default function SponsorPackages() {
               <h2 className="text-2xl font-bold leading-tight text-zinc-500 sm:text-3xl">
                 Double
                 <br />
-                Platinum Sponsor
+                Platinum Sponsorship
               </h2>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$10,250.00</p>
             </div>
@@ -83,8 +83,8 @@ export default function SponsorPackages() {
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
               <h2 className="text-2xl font-bold leading-tight text-yellow-600 sm:text-3xl">
-                Heavy Haul Gold<br />
-                Sponsorship
+                Heavy Haul<br />
+                Gold Sponsorship
               </h2>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$4,000.00</p>
             </div>
@@ -140,8 +140,8 @@ export default function SponsorPackages() {
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
               <h2 className="text-2xl font-bold leading-tight text-slate-500 sm:text-3xl">
-                Heavy Haul Silver<br />
-                Sponsorship
+                Heavy Haul<br />
+                Silver Sponsorship
               </h2>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$3,400.00</p>
             </div>
@@ -232,8 +232,8 @@ export default function SponsorPackages() {
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
               <h2 className="text-2xl font-bold leading-tight text-amber-800 sm:text-3xl">
-                Heavy Haul Bronze<br />
-                Sponsorship
+                Heavy Haul<br />
+                Bronze Sponsorship
               </h2>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$2,500.00</p>
             </div>
