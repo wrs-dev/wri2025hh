@@ -22,7 +22,7 @@ const SponsorRegisterButtonSilver = () => {
         initial="rest" // Initial state (non-hovered)
         whileHover="hover" // State when hovered
       >
-        <span className="z-10">PURCHASE NOW</span>
+        <span className="z-10">SIGN UP</span>
         {/* Apply variants to MotionIcon */}
         <motion.div className="z-10 w-8 pl-2" variants={iconVariants}>
           <ChevronDoubleRightIcon />

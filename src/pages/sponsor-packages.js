@@ -12,14 +12,15 @@ const sponsorPackages = () => {
   return (
     <main className="bg-white">
       <Head>
-        <title>WRI 2025 || Sponsor Packages</title>
+        <title>WRI 2025 Sponsorships</title>
       </Head>
       <Navigation />
       <Banner25HH />
       <div className="seminar-about-text" id="sponsor">
-        <div className="px-12 mx-auto">
-          <h2 className="text-6xl font-normal leading-normal text-center pt-11">
-            Consider becoming a <b>WRI 2025</b> Sponsor
+        <div className="pt-12 mx-auto">
+        {/* Main Headline */}
+          <h2 className="text-6xl font-bold leading-normal text-center pt-11">
+          WRI 2025 Sponsorships
           </h2>
         </div>
       </div>

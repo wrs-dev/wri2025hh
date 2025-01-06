@@ -10,155 +10,110 @@ import SponsorRegisterButtonDoubleInfoZone from '@/components/buttons/sponsor-re
 
 export default function SponsorPackages() {
   return (
-    <div className="pt-12 pb-24 bg-white sm:py-32">
+    <div className="pb-24 bg-white sm:pt-12">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
-        <h1 className="mb-12 text-4xl font-bold tracking-tight text-center text-black sm:text-5xl">
-          WRI 2025 Sponsorship Packages
-        </h1>
+        <section className="mb-24">
+          <p className="text-base leading-7">
+            <strong>Sponsor Attendee Registration:</strong> When you sign up for sponsorship,
+            the person completing the registration will automatically be registered as an
+            attendee. Depending on your chosen sponsorship level, you will be able to register
+            additional Sponsor Attendees. If you know who these attendees are, please enter
+            their information now. If not, you can contact{' '}
+            <a
+              href="mailto:erica@wheel-rail-seminars.com"
+              className="underline hover:text-blue-600"
+            >
+              erica@wheel-rail-seminars.com
+            </a>{' '}
+            to have us add them later.
+          </p>
+        </section>
 
-        {/* Platinum */}
+        {/* Heavy Haul Bronze Sponsorship */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
-                Heavy Haul<br />
-                Platinum Sponsorship
-              </h2>
-              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$5,500.00</p>
+              <h3 className="text-2xl font-bold leading-tight text-amber-800 sm:text-3xl">
+                Heavy Haul
+                <br />
+                Bronze Sponsorship
+              </h3>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$1,000.00</p>
             </div>
             <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes all Gold Level Benefits PLUS:</p>
               <ul className="ml-6 list-disc">
                 <li>
-                  Three (3) total complimentary registrations for the WRI 2025 Heavy Haul
-                  Seminar, Principles Course and related social events
+                  Acknowledgement on select printed Heavy Haul Seminar and Principles Course
+                  materials
                 </li>
                 <li>
-                  Dedicated Sponsor web page with company logo, description, and links to your
-                  site
+                  Logo placement on the Heavy Haul and Principles Course website with link to
+                  your website
                 </li>
-                <li>Individual social media recognition</li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButtonPlatinum />
+                Contact{' '}
+                <a
+                  href="mailto:erica@wheel-rail-seminars.com"
+                  className="underline hover:text-blue-600"
+                >
+                  erica@wheel-rail-seminars.com
+                </a>{' '}
+                to purchase.
               </div>
             </div>
           </div>
         </section>
 
-        {/* Double Platinum */}
+        {/* * Double Bronze Sponsorship */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-amber-800 sm:text-3xl">
                 Double
                 <br />
-                Platinum Sponsorship
-              </h2>
-              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$10,250.00</p>
+                Bronze Sponsorship *
+              </h3>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$1,800.00</p>
             </div>
             <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes all Double Gold Level Benefits PLUS:</p>
               <ul className="ml-6 list-disc">
                 <li>
-                  Three (3) total complimentary registrations for BOTH WRI 2025 events
-                  including the WRI 2025 Heavy Haul Conference in Kansas City and WRI 2025 Rail
-                  Transit Conference in Seattle
-                </li>
-                <li>
-                  The Double Silver sponsorship encompasses the entirety of each conference
-                  including the Heavy Haul and Rail Transit Seminars and each corresponding
-                  Principles Course and related social events
+                  Includes Bronze level Sponsorship for both conferences (Heavy Haul &amp; Rail
+                  Transit)
                 </li>
               </ul>
               <div className="mt-4">
-                <SponsorRegisterButtonDoublePlatinum />
+                Contact{' '}
+                <a
+                  href="mailto:erica@wheel-rail-seminars.com"
+                  className="underline hover:text-blue-600"
+                >
+                  erica@wheel-rail-seminars.com
+                </a>{' '}
+                to purchase.
               </div>
             </div>
           </div>
         </section>
 
-        {/* Gold */}
+        {/* Heavy Haul Silver Sponsorship */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-yellow-600 sm:text-3xl">
-                Heavy Haul<br />
-                Gold Sponsorship
-              </h2>
-              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$4,000.00</p>
-            </div>
-            <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes all Silver Level Benefits PLUS:</p>
-              <ul className="ml-6 list-disc">
-                <li>
-                  Two (2) total complimentary registrations for the WRI 2025 Heavy Haul
-                  Seminar, Principles Course and related social events
-                </li>
-              </ul>
-              <div className="mt-4">
-                <SponsorRegisterButtonGold />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Double Gold */}
-        <section className="mb-16">
-          <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
-            <div>
-              <h2 className="text-2xl font-bold leading-tight text-yellow-600 sm:text-3xl">
-                Double
+              <h3 className="text-2xl font-bold leading-tight text-slate-500 sm:text-3xl">
+                Heavy Haul
                 <br />
-                Gold Sponsorship
-              </h2>
-              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$7,600.00</p>
-            </div>
-            <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes all Double Silver Level Benefits PLUS:</p>
-              <ul className="ml-6 list-disc">
-                <li>
-                  Two (2) total complimentary registrations for BOTH WRI 2025 events including
-                  the WRI 2025 Heavy Haul Conference in Kansas City and WRI 2025 Rail Transit
-                  Conference in Seattle
-                </li>
-                <li>
-                  The Double Silver sponsorship encompasses the entirety of each conference
-                  including the Heavy Haul and Rail Transit Seminars and each corresponding
-                  Principles Course and related social events
-                </li>
-              </ul>
-              <div className="mt-4">
-                <SponsorRegisterButtonDoubleGold />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Silver */}
-        <section className="mb-16">
-          <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
-            <div>
-              <h2 className="text-2xl font-bold leading-tight text-slate-500 sm:text-3xl">
-                Heavy Haul<br />
                 Silver Sponsorship
-              </h2>
+              </h3>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$3,400.00</p>
             </div>
             <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes:</p>
+              <p className="mb-1 font-semibold">Includes all Bronze Level Benefits PLUS:</p>
               <ul className="ml-6 list-disc">
                 <li>
                   One (1) Complimentary registration for the WRI 2025 Heavy Haul Seminar,
                   Principles Course and related social events
-                </li>
-                <li>
-                  Acknowledgment on select printed Heavy Haul Seminar and Principles Course
-                  materials
-                </li>
-                <li>
-                  Logo placement on the Heavy Haul Seminar and Principles Course website with
-                  link to your website
                 </li>
                 <li>6’ Display table in ExpoZone/Refreshment Area</li>
                 <li>On-screen logo presence in General Session Room</li>
@@ -166,9 +121,7 @@ export default function SponsorPackages() {
                   Recognition on sponsor signage in Heavy Haul &amp; Principles registration
                   area
                 </li>
-                <li>
-                  Dedicated Sponsor web page with company logo and links to your site
-                </li>
+                <li>Dedicated Sponsor web page with company logo and links to your site</li>
                 <li>Social media recognition</li>
               </ul>
               <div className="mt-4">
@@ -178,45 +131,25 @@ export default function SponsorPackages() {
           </div>
         </section>
 
-        {/* Double Silver */}
+        {/* * Double Silver Sponsorship */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-slate-500 sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-slate-500 sm:text-3xl">
                 Double
                 <br />
-                Silver Sponsorship
-              </h2>
+                Silver Sponsorship *
+              </h3>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$6,500.00</p>
             </div>
             <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes:</p>
               <ul className="ml-6 list-disc">
                 <li>
-                  One (1) Complimentary registration for BOTH WRI 2025 events including the WRI
-                  2025 Heavy Haul Conference in Kansas City and WRI 2025 Rail Transit Conference
-                  in Seattle
+                  Includes Silver Level Sponsorship for both conferences (Rail Transit &amp; Heavy
+                  Haul)
                 </li>
                 <li>
-                  Acknowledgment on select printed Heavy Haul Seminar, Rail Transit Seminar and
-                  Principles Course materials
-                </li>
-                <li>
-                  Logo placement on the Heavy Haul Seminar, Rail Transit Seminar, and Principles
-                  Course website with link to your website
-                </li>
-                <li>6’ Display table in ExpoZone/Refreshment Area</li>
-                <li>On-screen logo presence in General Session Room</li>
-                <li>
-                  Recognition on sponsor signage in Heavy Haul, Rail Transit &amp; Principles
-                  registration area
-                </li>
-                <li>
-                  Dedicated Sponsor web page with company logo and links to your site
-                </li>
-                <li>Social media recognition</li>
-                <li>
-                  One Year Sponsorship with Interface Journal Including prominent spot with your
+                  One year Sponsorship with Interface Journal including prominent spot with your
                   logo and hot link to your website
                 </li>
               </ul>
@@ -227,81 +160,131 @@ export default function SponsorPackages() {
           </div>
         </section>
 
-        {/* Bronze */}
+        {/* Heavy Haul Gold Sponsorship */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-amber-800 sm:text-3xl">
-                Heavy Haul<br />
-                Bronze Sponsorship
-              </h2>
-              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$2,500.00</p>
+              <h3 className="text-2xl font-bold leading-tight text-yellow-600 sm:text-3xl">
+                Heavy Haul
+                <br />
+                Gold Sponsorship
+              </h3>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$4,000.00</p>
             </div>
             <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes:</p>
+              <p className="mb-1 font-semibold">Includes all Silver Level Benefits PLUS:</p>
               <ul className="ml-6 list-disc">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.
+                  One (1) additional complimentary registration for a total of two (2)
+                  complimentary registrations to the Heavy Haul, Principles Course and related
+                  social events
                 </li>
+                <li>6’ Display Table in the Heavy Haul Welcome Reception</li>
               </ul>
               <div className="mt-4">
-                Contact{' '}
-                <a href="mailto:erica@wheel-rail-seminars.com">
-                    erica@wheel-rail-seminars.com
-                </a>{' '}
-                to purchase.
+                <SponsorRegisterButtonGold />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Double Bronze */}
+        {/* * Double Gold Sponsorship */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-amber-800 sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-yellow-600 sm:text-3xl">
                 Double
                 <br />
-                Bronze Sponsorship
-              </h2>
-              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$4,000.00</p>
+                Gold Sponsorship *
+              </h3>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$7,600.00</p>
             </div>
             <div className="col-span-2">
-              <p className="mb-1 font-semibold">Includes:</p>
               <ul className="ml-6 list-disc">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.
+                  Includes Gold Level Sponsorship for both conferences (Rail Transit &amp; Heavy
+                  Haul)
                 </li>
                 <li>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                  eu fugiat nulla pariatur.
+                  One year Sponsorship with Interface Journal including prominent spot with your
+                  logo and hot link to your website
                 </li>
               </ul>
               <div className="mt-4">
-                Contact{' '}
-                <a href="mailto:erica@wheel-rail-seminars.com">
-                    erica@wheel-rail-seminars.com
-                </a>{' '}
-                to purchase.
-                </div>
+                <SponsorRegisterButtonDoubleGold />
+              </div>
             </div>
           </div>
         </section>
 
-        {/* InfoZone */}
+        {/* Heavy Haul Platinum Sponsorship */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-green-700 sm:text-3xl">
-                InfoZone<br />
+              <h3 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
+                Heavy Haul
+                <br />
+                Platinum Sponsorship
+              </h3>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$5,500.00</p>
+            </div>
+            <div className="col-span-2">
+              <p className="mb-1 font-semibold">Includes all Gold Level Benefits PLUS:</p>
+              <ul className="ml-6 list-disc">
+                <li>
+                  One (1) additional complimentary registration for a total of three (3)
+                  complimentary registrations
+                </li>
+                <li>
+                  “Sponsor Bio Page” with company info, logos and links to your site, plus special
+                  recognition on site
+                </li>
+              </ul>
+              <div className="mt-4">
+                <SponsorRegisterButtonPlatinum />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* * Double Platinum Sponsorship */}
+        <section className="mb-16">
+          <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
+            <div>
+              <h3 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
+                Double
+                <br />
+                Platinum Sponsorship *
+              </h3>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$10,250.00</p>
+            </div>
+            <div className="col-span-2">
+              <ul className="ml-6 list-disc">
+                <li>
+                  Includes Platinum Level Sponsorship for both conferences (Rail Transit &amp;
+                  Heavy Haul)
+                </li>
+                <li>
+                  One year Sponsorship with Interface Journal including prominent spot with your
+                  logo and hot link to your website
+                </li>
+              </ul>
+              <div className="mt-4">
+                <SponsorRegisterButtonDoublePlatinum />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* InfoZone Partner */}
+        <section className="mb-16">
+          <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
+            <div>
+              <h3 className="text-2xl font-bold leading-tight text-green-700 sm:text-3xl">
+                InfoZone
+                <br />
                 Partner
-              </h2>
+              </h3>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$7,000.00</p>
             </div>
             <div className="col-span-2">
@@ -314,9 +297,9 @@ export default function SponsorPackages() {
                 company.
               </p>
               <p>
-                The goal is to promote a better understanding of the dynamic interaction
-                between vehicles and track. This innovative concept has consistently received
-                great reviews from participants and InfoZone Partners alike.
+                The goal is to promote a better understanding of the dynamic interaction between
+                vehicles and track. This innovative concept has consistently received great
+                reviews from participants and InfoZone Partners alike.
               </p>
               <ul className="mt-3 ml-6 list-disc">
                 <li>High-quality technical presentations</li>
@@ -331,15 +314,15 @@ export default function SponsorPackages() {
           </div>
         </section>
 
-        {/* Double InfoZone */}
+        {/* * Double InfoZone Partner */}
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h2 className="text-2xl font-bold leading-tight text-green-700 sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-green-700 sm:text-3xl">
                 Double
                 <br />
-                InfoZone Partner
-              </h2>
+                InfoZone Partner *
+              </h3>
               <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$13,000.00</p>
             </div>
             <div className="col-span-2">
@@ -369,19 +352,11 @@ export default function SponsorPackages() {
           </div>
         </section>
 
-        {/* Sponsor Attendee Registration */}
-        <section>
-          <p className="text-base leading-7">
-            <strong>Sponsor Attendee Registration:</strong> When you register for sponsorship,
-            the person completing the registration will automatically be registered as an
-            attendee. Depending on your chosen sponsorship level, you will be able to register
-            additional Sponsor Attendees. If you know who these attendees are, please enter
-            their information now. If not, you can contact {' '}
-                <a href="mailto:erica@wheel-rail-seminars.com">
-                    erica@wheel-rail-seminars.com
-                </a>{' '} to have us add them later.
-          </p>
-        </section>
+        {/* Star Note at the Bottom */}
+        <p className="mt-4 text-2xl leading-7">
+          *All “Double” Sponsorship levels will give your organization the same level sponsorship
+          at the Rail Transit Conference in Seattle, WA on August 26-28, 2025
+        </p>
       </div>
     </div>
   );
