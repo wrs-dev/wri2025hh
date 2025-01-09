@@ -16,7 +16,7 @@ export default function SponsorPackages() {
           <p className="text-base leading-7">
             <strong>Sponsor Attendee Registration:</strong> When you sign up for sponsorship,
             the person completing the registration will automatically be registered as an
-            attendee. Depending on your chosen sponsorship level, you will be able to register
+            attendee. Name changes can be made later. Depending on your chosen sponsorship level, you will be able to register
             additional Sponsor Attendees. If you know who these attendees are, please enter
             their information now. If not, you can contact{' '}
             <a
@@ -50,6 +50,12 @@ export default function SponsorPackages() {
                   Logo placement on the Heavy Haul and Principles Course website with link to
                   your website
                 </li>
+                <li>
+                On-screen logo presence in General Session Room
+                </li>
+                <li>
+                Recognition on sponsor signage in Heavy Haul & Principles registration area
+                </li>
               </ul>
               <div className="mt-4">
                 Contact{' '}
@@ -59,7 +65,7 @@ export default function SponsorPackages() {
                 >
                   erica@wheel-rail-seminars.com
                 </a>{' '}
-                to purchase.
+                to sign up to be a Bronze Sponsor.
               </div>
             </div>
           </div>
@@ -91,7 +97,7 @@ export default function SponsorPackages() {
                 >
                   erica@wheel-rail-seminars.com
                 </a>{' '}
-                to purchase.
+                to sign up to be a Double Bronze Sponsor.
               </div>
             </div>
           </div>
@@ -116,11 +122,6 @@ export default function SponsorPackages() {
                   Principles Course and related social events
                 </li>
                 <li>6’ Display table in ExpoZone/Refreshment Area</li>
-                <li>On-screen logo presence in General Session Room</li>
-                <li>
-                  Recognition on sponsor signage in Heavy Haul &amp; Principles registration
-                  area
-                </li>
                 <li>Dedicated Sponsor web page with company logo and links to your site</li>
                 <li>Social media recognition</li>
               </ul>
@@ -221,7 +222,7 @@ export default function SponsorPackages() {
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h3 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-zinc-500 sm:text-3xl">
                 Heavy Haul
                 <br />
                 Platinum Sponsorship
@@ -251,7 +252,7 @@ export default function SponsorPackages() {
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h3 className="text-2xl font-bold leading-tight text-wri-blue sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-zinc-500 sm:text-3xl">
                 Double
                 <br />
                 Platinum Sponsorship *
@@ -285,28 +286,69 @@ export default function SponsorPackages() {
                 <br />
                 Partner
               </h3>
-              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$7,000.00</p>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">
+                $7,000.00
+              </p>
             </div>
             <div className="col-span-2">
               <p className="mb-1">
-                The InfoZone is an interactive learning environment that is designed to augment
-                the information presented at the annual WRI Conference. Our InfoZone partners
-                offer high-quality technical information on aspects of wheel/rail interaction
-                that they know best, providing small groups of approximately 30-40 delegates
-                insight into the product or service that is the specialty of the presenting
-                company.
+                The InfoZone is an interactive learning environment that is designed to
+                augment the information presented at the annual WRI Conference. Our
+                InfoZone partners offer high-quality technical information on aspects of
+                wheel/rail interaction that they know best, providing small groups of
+                approximately 30-40 delegates insight into the product or service that is
+                the specialty of the presenting company.
               </p>
               <p>
-                The goal is to promote a better understanding of the dynamic interaction between
-                vehicles and track. This innovative concept has consistently received great
-                reviews from participants and InfoZone Partners alike.
+                The goal is to promote a better understanding of the dynamic interaction
+                between vehicles and track. This innovative concept has consistently
+                received great reviews from participants and InfoZone Partners alike.
               </p>
-              <ul className="mt-3 ml-6 list-disc">
-                <li>High-quality technical presentations</li>
-                <li>Small-group interactive learning</li>
-                <li>Focus on wheel/rail interaction</li>
-                <li>Valuable insights for your product or service</li>
+
+              {/* Updated content starts here */}
+              <p className="mt-4 font-semibold">Your Organization will receive:</p>
+              <ul className="ml-6 list-disc">
+                <li className="mb-2">
+                  <strong>Pre-Event:</strong>
+                  <ul className="ml-6 list-disc">
+                    <li>Logo and link on the Wheel Rail Seminars dedicated InfoZone web page</li>
+                    <li>Email campaign to over 15,000 subscribers</li>
+                    <li>
+                      Ad in <em>RT&amp;S</em> magazine for the Heavy Haul Conference and <em>Mass Transit</em> 
+                      magazine for the Rail Transit Conference
+                    </li>
+                    <li>Social media campaign promoting InfoZone Partners</li>
+                  </ul>
+                </li>
+                <li className="mb-2">
+                  <strong>At-The-Event:</strong>
+                  <ul className="ml-6 list-disc">
+                    <li>
+                      Two Complimentary attendee registrations for Principles Course and 
+                      the Heavy Haul Seminar or the Rail Transit Seminar
+                    </li>
+                    <li>InfoZone Partner appreciation signs</li>
+                    <li>
+                      Company logo in the Heavy Haul and Rail Transit Seminar Pocket Agendas
+                    </li>
+                    <li>
+                      Opportunity to address all Heavy Haul and Rail Transit attendees in your Zone
+                    </li>
+                    <li>On-screen marketing during breaks with a 3-slide sequence</li>
+                    <li>Sponsorship recognition for the "Ticket to Knowledge" drawing</li>
+                    <li>ExpoZone marketing opportunities</li>
+                  </ul>
+                </li>
+                <li className="mb-2">
+                  <strong>Post-Event:</strong>
+                  <ul className="ml-6 list-disc">
+                    <li>Follow-up email recognition</li>
+                    <li>Thank-you campaign on social media</li>
+                  </ul>
+                </li>
               </ul>
+              {/* Updated content ends here */}
+
               <div className="mt-4">
                 <SponsorRegisterButtonInfoZone />
               </div>
@@ -318,7 +360,7 @@ export default function SponsorPackages() {
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h3 className="text-2xl font-bold leading-tight text-green-700 sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-yellow-500 sm:text-3xl">
                 Double
                 <br />
                 InfoZone Partner *
@@ -327,9 +369,9 @@ export default function SponsorPackages() {
             </div>
             <div className="col-span-2">
               <p className="mb-1">
-                For the first time, in 2025 we are offering InfoZone sponsorships for both the
-                WRI 2025 Heavy Haul Conference AND WRI 2025 Rail Transit. The “Double InfoZone
-                Sponsorship” provides exposure at both WRI 2025 events this year for one low
+                For the first time, in 2025 we are offering InfoZone Partnerships for both the
+                WRI 2025 Heavy Haul Conference AND WRI 2025 Rail Transit Conference. The “Double InfoZone
+                Partnership" provides exposure at both WRI 2025 events this year for one low
                 price!
               </p>
               <p>
@@ -342,7 +384,7 @@ export default function SponsorPackages() {
               <ul className="mt-3 ml-6 list-disc">
                 <li>Showcase your expertise at two WRI 2025 events</li>
                 <li>Engage with both Heavy Haul and Rail Transit audiences</li>
-                <li>Elevate brand recognition with a single sponsorship</li>
+                <li>Elevate brand recognition with a single partnership</li>
                 <li>Proven track record of participant satisfaction</li>
               </ul>
               <div className="mt-4">
