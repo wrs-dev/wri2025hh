@@ -281,7 +281,7 @@ export default function SponsorPackages() {
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
-              <h3 className="text-2xl font-bold leading-tight text-green-700 sm:text-3xl">
+              <h3 className="text-2xl font-bold leading-tight text-yellow-500 sm:text-3xl">
                 InfoZone
                 <br />
                 Partner
