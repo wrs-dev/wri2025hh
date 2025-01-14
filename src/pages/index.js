@@ -4,6 +4,7 @@ import IconsHH from '@/components/icons/iconsHH-nolink';
 import Intro from '@/components/intro';
 import CallForPapers from '@/components/call-for-papers';
 import Registration from '@/components/registration';
+import SponsorCTA2 from '@/components/sponsors/sponsor-cta-2'
 import Reviews from '@/components/reviews';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
 import InterfaceJournal from '@/components/interface-journal';
@@ -52,6 +53,7 @@ export default function Home({ title, description, socialImage }) {
       <Intro />
       <CallForPapers />
       <Registration />
+      <SponsorCTA2 />
       <Reviews />
       <InfoZoneSection />
       <section className="my-12">
