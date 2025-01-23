@@ -32,7 +32,8 @@ export default function SponsorCTA2() {
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               The ExpoZone offers organizations effective, up-close exposure to decision makers.
-              <br />
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-300">
               Choose a “Double” level sponsorship and receive discounts to both the WRI ’25 Heavy Haul 
               Conference and the WRI ’25 Rail Transit Conference.
             </p>
