@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import SponsorRegisterButtonSilver from '@/components/buttons/sponsor-register-button-silver';
 import SponsorRegisterButtonDoubleSilver from '@/components/buttons/sponsor-register-button-double-silver';
 import SponsorRegisterButtonGold from '@/components/buttons/sponsor-register-button-gold';
@@ -149,10 +150,6 @@ export default function SponsorPackages() {
                   Includes Silver Level Sponsorship for both conferences (Rail Transit &amp; Heavy
                   Haul)
                 </li>
-                <li>
-                  One year Sponsorship with Interface Journal including prominent spot with your
-                  logo and hot link to your website
-                </li>
               </ul>
               <div className="mt-4">
                 <SponsorRegisterButtonDoubleSilver />
@@ -205,10 +202,6 @@ export default function SponsorPackages() {
                 <li>
                   Includes Gold Level Sponsorship for both conferences (Rail Transit &amp; Heavy
                   Haul)
-                </li>
-                <li>
-                  One year Sponsorship with Interface Journal including prominent spot with your
-                  logo and hot link to your website
                 </li>
               </ul>
               <div className="mt-4">
@@ -264,10 +257,6 @@ export default function SponsorPackages() {
                 <li>
                   Includes Platinum Level Sponsorship for both conferences (Rail Transit &amp;
                   Heavy Haul)
-                </li>
-                <li>
-                  One year Sponsorship with Interface Journal including prominent spot with your
-                  logo and hot link to your website
                 </li>
               </ul>
               <div className="mt-4">
@@ -390,6 +379,48 @@ export default function SponsorPackages() {
               <div className="mt-4">
                 <SponsorRegisterButtonDoubleInfoZone />
               </div>
+            </div>
+          </div>
+        </section>
+        {/* Interface Journal Add-On */}
+        <section className="mt-16 mb-32">
+          <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
+            {/* Logo column */}
+            <div className="flex items-center justify-left">
+              {/* Using next/image */}
+              <Image
+                src="/ij-logo.webp"
+                alt="Interface Journal Logo"
+                width={250}
+                height={100}
+              />
+            </div>
+
+            {/* Text column */}
+            <div className="col-span-2">
+              <h3 className="text-2xl font-bold leading-tight text-blue-900 sm:text-3xl">
+                Interface Journal Sponsor Add-On
+              </h3>
+              <p className="mt-2 text-xl font-semibold text-wri-dark-blue">$3,500.00</p>
+              <p className="mt-4">
+                Add on to <strong>any sponsorship level</strong> a One Year Sponsorship in{' '}
+                <em>Interface Journal (The Journal of Wheel/Rail Interaction)</em> including a
+                prominent spot with your logo and hot link to your website &mdash; 
+                <strong>$3,500.00</strong> 
+                &nbsp;(a $1,500 discount to the normal yearly sponsorship price).
+              </p>
+              <p className="mt-4">
+                Learn more about Interface Journal at:{' '}
+                <a
+                  href="https://interfacejournal.com/"
+                  className="underline hover:text-blue-600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  interfacejournal.com
+                </a>
+                .
+              </p>
             </div>
           </div>
         </section>
