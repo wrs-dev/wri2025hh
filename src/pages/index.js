@@ -45,8 +45,9 @@ export default function Home({ title, description, socialImage }) {
           </span>{' '}
           is specifically tailored for the heavy haul (freight) sector, focusing on the unique challenges and advancements in this area of the railroad industry. WRI 2025 Heavy Haul Conference will be held in{' '}
           <span className="font-extrabold font-wri">
-            Kansas City, MO from June 10-12, 2025.
+            Kansas City, MO from June 10-12, 2025
           </span>
+          , and will focus on practical applications. Attendees will be from railroads including all the class 1 railroads, contractors, government regulators, researchers and consultants.
         </p>
         
       </div>

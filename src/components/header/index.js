@@ -8,37 +8,37 @@ const Header = () => {
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            {/*<a
-              href="https://www.masstransitmag.com/"
+            <a
+              href="https://www.nurailcenter.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="/MassTransit-PresentingSponsor.png"
+                src="/NuRail_Presenting_Sponsor_2025.png"
                 width={258}
                 height={75}
-                alt="Mass Transit Logo"
+                alt="NuRail Logo"
                 style={{ display: 'block' }} // Ensure images don't reformat
               />
-            </a>*/}
+            </a>
           </div>
           <div className="flex items-center justify-center flex-grow mt-12">
             <Animation />
           </div>
           <div className="flex items-center">
-            {/*<a
+            <a
               href="https://www.rtands.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="/RT&S-PresentingSponsor.png"
+                src="/RTS_Presenting_Sponsor_2025.png"
                 width={217}
                 height={75}
                 alt="RT&S Logo"
                 style={{ display: 'block' }} // Ensure images don't reformat
               />
-            </a>*/}
+            </a>
           </div>
         </div>
       </div>
