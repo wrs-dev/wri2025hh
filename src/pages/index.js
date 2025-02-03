@@ -54,9 +54,9 @@ export default function Home({ title, description, socialImage }) {
       <Intro />
       <CallForPapers />
       <Registration />
+      <InfoZoneSection />
       <SponsorCTA2 />
       <Reviews />
-      <InfoZoneSection />
       <section className="my-12">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-20">
