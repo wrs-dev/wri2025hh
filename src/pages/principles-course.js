@@ -125,7 +125,7 @@ const PrinciplesCoursePage = () => {
         </div>
       </div>
       <Registration />
-      <SponsorsCloud />
+      {/*<SponsorsCloud />*/}
     </main>
   );
 };
