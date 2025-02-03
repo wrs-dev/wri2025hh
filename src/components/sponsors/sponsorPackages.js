@@ -8,6 +8,7 @@ import SponsorRegisterButtonPlatinum from '@/components/buttons/sponsor-register
 import SponsorRegisterButtonDoublePlatinum from '@/components/buttons/sponsor-register-button-double-platinum';
 import SponsorRegisterButtonInfoZone from '@/components/buttons/sponsor-register-button-infozone';
 import SponsorRegisterButtonDoubleInfoZone from '@/components/buttons/sponsor-register-button-double-infozone';
+import SponsorCtaPdf from '@/components/sponsors/sponsor-cta-pdf';
 
 export default function SponsorPackages() {
   return (
@@ -430,6 +431,7 @@ export default function SponsorPackages() {
           *All “Double” Sponsorship levels will give your organization the same level sponsorship
           at the Rail Transit Conference in Seattle, WA on August 26-28, 2025
         </p>
+        <SponsorCtaPdf/>
       </div>
     </div>
   );
