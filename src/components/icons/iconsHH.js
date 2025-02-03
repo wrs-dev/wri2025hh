@@ -29,15 +29,12 @@ const IconLinksHH = () => {
   );
 
   const getRestingBackgroundColor = useMemo(() => {
-    const backgrounds = ['bg-wri-green', 'bg-wri-red', 'bg-wri-blue'];
-    if (router.pathname.includes('rail-transit')) {
-      backgrounds[1] = backgrounds[2] = 'bg-wri-neutral';
-    } else if (router.pathname.includes('principles-course')) {
-      backgrounds[0] = backgrounds[2] = 'bg-wri-neutral';
+    if (router.pathname.includes('principles-course')) {
+      return ['bg-wri-green', 'bg-wri-neutral']; // Green always visible, red neutral
     } else if (router.pathname.includes('heavy-haul')) {
-      backgrounds[0] = backgrounds[1] = 'bg-wri-neutral';
+      return ['bg-wri-neutral', 'bg-wri-red']; // Red always visible, green neutral
     }
-    return backgrounds;
+    return ['bg-wri-neutral', 'bg-wri-neutral']; // Default to all neutral
   }, [router.pathname]);
 
   return (

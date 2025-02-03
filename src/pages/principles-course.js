@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Navigation from '@/components/navigation';
-import Banner from '@/components/banner';
-import IconLinks from '@/components/icons';
+import Banner25HH from '@/components/banner/wri25HH';
+import IconsHH from '@/components/icons/iconsHH';
 import SpeakersPC from '@/components/speakers/speakersPC';
 import Registration from '@/components/registration';
 import SponsorsCloud from '@/components/sponsors';
@@ -23,8 +23,8 @@ const PrinciplesCoursePage = () => {
   return (
     <main className="bg-white">
       <Navigation />
-      <Banner />
-      <IconLinks />
+      <Banner25HH />
+      <IconsHH />
       <div className="section">
         <div className="mx-auto">
           <h2 className="text-5xl font-normal text-center pb-11">
