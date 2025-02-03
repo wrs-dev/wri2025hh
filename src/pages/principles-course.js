@@ -10,9 +10,9 @@ import Head from 'next/head';
 export async function getStaticProps() {
   return {
     props: {
-      title: "WRI 2024 | Principles Course Speakers",
-      description: "Speakers for the 29th Annual Wheel/Rail Interaction Conference (WRI)",
-      socialImage: "/wri2024-social.png"
+      title: "WRI 2025 HH | Principles Course Speakers",
+      description: "Speakers for the 30th Annual Wheel/Rail Interaction Conference (WRI)",
+      socialImage: "/wri2025-hh-social.png"
     }
   };
 }
@@ -30,7 +30,7 @@ const PrinciplesCoursePage = () => {
           <h2 className="text-5xl font-normal text-center pb-11">
             Meet the{' '}
             <span className="text-wri-green">
-              <b>2024 Principles Course</b>
+              <b>2025 Principles Course</b>
             </span>{' '}
             Speakers
           </h2>
@@ -42,11 +42,11 @@ const PrinciplesCoursePage = () => {
                 <div className="w-full px-4 mb-6 lg:w-4/6 lg:pr-24">
                   <h2 className="text-5xl font-normal leading-normal text-center">
                     <span className="text-wri-green">
-                      <b>2024 Principles Course</b>
+                      <b>2025 Principles Course</b>
                     </span>
                   </h2>
                   <h3 className="text-3xl font-normal leading-normal text-center pb-11">
-                    May 21, 2024
+                    June 10, 2025
                   </h3>
                   <p className="pt-2 pb-6">
                     Designed for both Rail Transit and Heavy Haul professionals,
@@ -66,7 +66,7 @@ const PrinciplesCoursePage = () => {
                     railroaders.
                   </p>
                   <h2 className="mt-16 seminar-discount-header">
-                    WRI 2024 Discount Programs:
+                    WRI 2025 Discount Programs:
                   </h2>
                   <p className="pt-2 pb-6">
                     Wheel Rail Seminars offers various discount programs,
