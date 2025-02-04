@@ -17,7 +17,7 @@ export default function sponsorCta() {
             href="/WRI-2025-Sponsorship-Kit.pdf"
             className="rounded-md bg-wri-red px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-wri-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wri-green"
           >
-            Download Information PDF
+            Download Sponsorship Kit
           </Link>
         </div>
       </div>
