@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navigation from '@/components/navigation';
 import Banner25HH from '@/components/banner/wri25HH';
 import IconsHH from '@/components/icons/iconsHH';
-import SpeakersPC from '@/components/speakers/speakersPC';
+import SpeakersPCPreview from '@/components/speakers/speakersPC-no-links';
 import Registration from '@/components/registration';
 import SponsorsCloud from '@/components/sponsors';
 import Head from 'next/head';
@@ -34,7 +34,7 @@ const PrinciplesCoursePage = () => {
             </span>{' '}
             Speakers
           </h2>
-          <SpeakersPC />
+          <SpeakersPCPreview />
 
           <div className="flex flex-wrap justify-center">
             <div className="w-full px-4 mx-auto mb-24 max-w-7xl">
