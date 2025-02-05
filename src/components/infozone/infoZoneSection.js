@@ -22,7 +22,7 @@ export default function InfoZoneSection() {
                 </p>
                 <Link
                   className="pt-4 underline text-wri-red"
-                  href="https://cvent.me/DeeEKR"
+                  href="https://wri2025hh.wheel-rail-seminars.com/sponsor-packages"
                 >
                   Join the 2025 ExpoZone!
                 </Link>
@@ -55,7 +55,7 @@ export default function InfoZoneSection() {
                 </p>
                 <Link
                   className="pt-4 underline text-wri-green"
-                  href="https://cvent.me/DeeEKR"
+                  href="https://wri2025hh.wheel-rail-seminars.com/sponsor-packages"
                 >
                   Get into the InfoZone!
                 </Link>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Navigation from '@/components/navigation';
-import Banner from '@/components/banner';
-import IconLinks from '@/components/icons';
-import SpeakersPC from '@/components/speakers/speakersPC';
+import Banner25HH from '@/components/banner/wri25HH';
+import IconsHH from '@/components/icons/iconsHH';
+import SpeakersPCPreview from '@/components/speakers/speakersPC-no-links';
 import Registration from '@/components/registration';
 import SponsorsCloud from '@/components/sponsors';
 import Head from 'next/head';
@@ -10,9 +10,9 @@ import Head from 'next/head';
 export async function getStaticProps() {
   return {
     props: {
-      title: "WRI 2024 | Principles Course Speakers",
-      description: "Speakers for the 29th Annual Wheel/Rail Interaction Conference (WRI)",
-      socialImage: "/wri2024-social.png"
+      title: "WRI 2025 HH | Principles Course Speakers",
+      description: "Speakers for the 30th Annual Wheel/Rail Interaction Conference (WRI)",
+      socialImage: "/wri2025-hh-social.png"
     }
   };
 }
@@ -23,18 +23,18 @@ const PrinciplesCoursePage = () => {
   return (
     <main className="bg-white">
       <Navigation />
-      <Banner />
-      <IconLinks />
+      <Banner25HH />
+      <IconsHH />
       <div className="section">
         <div className="mx-auto">
           <h2 className="text-5xl font-normal text-center pb-11">
             Meet the{' '}
             <span className="text-wri-green">
-              <b>2024 Principles Course</b>
+              <b>2025 Principles Course</b>
             </span>{' '}
             Speakers
           </h2>
-          <SpeakersPC />
+          <SpeakersPCPreview />
 
           <div className="flex flex-wrap justify-center">
             <div className="w-full px-4 mx-auto mb-24 max-w-7xl">
@@ -42,31 +42,21 @@ const PrinciplesCoursePage = () => {
                 <div className="w-full px-4 mb-6 lg:w-4/6 lg:pr-24">
                   <h2 className="text-5xl font-normal leading-normal text-center">
                     <span className="text-wri-green">
-                      <b>2024 Principles Course</b>
+                      <b>2025 Principles Course</b>
                     </span>
                   </h2>
                   <h3 className="text-3xl font-normal leading-normal text-center pb-11">
-                    May 21, 2024
+                    June 10, 2025
                   </h3>
                   <p className="pt-2 pb-6">
-                    Designed for both Rail Transit and Heavy Haul professionals,
-                    the{' '}
                     <span className="font-bold text-wri-green">
-                      Principles of Wheel/Rail Interaction
+                    The Principles of Wheel/Rail Interaction course
                     </span>{' '}
-                    is an intensive, full-day course providing in-depth
-                    examination of the primary aspects of wheel/rail and
-                    vehicle/track interaction, drawing from both theory and
-                    practical application. Past courses have covered topics such
-                    as wheel truing strategy, rail metallurgy, ultrasonic
-                    testing, thermal rail stresses, vehicle-track measurement
-                    technologies and much more. The Course offers a
-                    cross-disciplinary perspective on the fundamentals
-                    recommended for both industry veterans and novice
-                    railroaders.
+                     has been revitalized and reimagined with a tighter focus on the practical aspects of wheel/rail and vehicle/track interaction for 2025. The course will begin with a case study — an examination of an actual wheel/rail interaction-related derailment. Presenters will cover the fundamental aspects of track, vehicle suspension systems, damage mechanisms, measurements systems — all the topics we have traditionally covered — but will also connect the dots between theory and what actually happens in the field. A wrap-up session will review the causes attributed to the case study derailment in light of the Principles examined throughout the course. We’ll also look at approaches that can be taken to mitigate wheel/rail- and vehicle/track-related derailments in the future.
+
                   </p>
                   <h2 className="mt-16 seminar-discount-header">
-                    WRI 2024 Discount Programs:
+                    WRI 2025 Discount Programs:
                   </h2>
                   <p className="pt-2 pb-6">
                     Wheel Rail Seminars offers various discount programs,
@@ -125,7 +115,7 @@ const PrinciplesCoursePage = () => {
         </div>
       </div>
       <Registration />
-      <SponsorsCloud />
+      {/*<SponsorsCloud />*/}
     </main>
   );
 };

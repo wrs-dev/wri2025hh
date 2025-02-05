@@ -37,7 +37,7 @@ const SpeakerCard = ({ name, company, imageSrc, topic, bioLink }) => {
         </div>
       </div>
       <div className="flex justify-center w-full p-4 mt-12 lg:mt-16 h-18 sm:h-36">
-        <Link href={bioLink}>
+        <Link href={bioLink}
           <div className="inline-flex items-center justify-between w-full h-full">
             <div className="text-sm text-wri-mid-blue md:text-xl lg:text-2xl">
               {topic}
