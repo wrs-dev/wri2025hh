@@ -22,8 +22,8 @@ export default function Navigation() {
   const links = [
     {
       name: 'Principles Course',
-      description: 'Coming Soon',
-      href: '/#',
+      description: 'Preview speakers',
+      href: '/principles-course#icons',
       icon: 'principles-icon.svg',
       background: 'bg-wri-green',
       isExternal: false,
