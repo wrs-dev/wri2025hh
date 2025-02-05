@@ -49,21 +49,11 @@ const PrinciplesCoursePage = () => {
                     June 10, 2025
                   </h3>
                   <p className="pt-2 pb-6">
-                    Designed for both Rail Transit and Heavy Haul professionals,
-                    the{' '}
                     <span className="font-bold text-wri-green">
-                      Principles of Wheel/Rail Interaction
+                    The Principles of Wheel/Rail Interaction course
                     </span>{' '}
-                    is an intensive, full-day course providing in-depth
-                    examination of the primary aspects of wheel/rail and
-                    vehicle/track interaction, drawing from both theory and
-                    practical application. Past courses have covered topics such
-                    as wheel truing strategy, rail metallurgy, ultrasonic
-                    testing, thermal rail stresses, vehicle-track measurement
-                    technologies and much more. The Course offers a
-                    cross-disciplinary perspective on the fundamentals
-                    recommended for both industry veterans and novice
-                    railroaders.
+                     has been revitalized and reimagined with a tighter focus on the practical aspects of wheel/rail and vehicle/track interaction for 2025. The course will begin with a case study — an examination of an actual wheel/rail interaction-related derailment. Presenters will cover the fundamental aspects of track, vehicle suspension systems, damage mechanisms, measurements systems — all the topics we have traditionally covered — but will also connect the dots between theory and what actually happens in the field. A wrap-up session will review the causes attributed to the case study derailment in light of the Principles examined throughout the course. We’ll also look at approaches that can be taken to mitigate wheel/rail- and vehicle/track-related derailments in the future.
+
                   </p>
                   <h2 className="mt-16 seminar-discount-header">
                     WRI 2025 Discount Programs:
