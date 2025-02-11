@@ -6,8 +6,70 @@ const Header = () => {
   return (
     <header className="bg-white shadow sm:pb-8">
       <div className="container px-4 mx-auto">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
+
+        {/* 1) Desktop/Tablet layout (≥ sm): single row, hidden on mobile */}
+        <div className="items-end justify-between hidden sm:flex">
+          
+          {/* Left sponsor */}
+          <div className="flex items-end">
+            <a
+              href="https://www.nurailcenter.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* On tablets (≥sm <md) => w-[160px], on desktop (≥md) => w-[258px] */}
+              <img
+                src="/NuRail_Presenting_Sponsor_2025.png"
+                alt="NuRail Logo"
+                style={{ display: 'block' }}
+                className="
+                  h-auto
+                  sm:w-[160px]
+                  md:w-[175px]
+                  lg:w-[258px]
+                "
+              />
+            </a>
+          </div>
+
+          {/* Center animation */}
+          <div className="flex items-end justify-center flex-grow">
+            {/* Removed lg:mt-12 to keep the bottom aligned with the logos */}
+            <Animation />
+          </div>
+
+          {/* Right sponsor */}
+          <div className="flex items-end">
+            <a
+              href="https://www.rtands.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* On tablets (≥sm <md) => w-[140px], on desktop (≥md) => w-[217px] */}
+              <img
+                src="/RTS_Presenting_Sponsor_2025.png"
+                alt="RT&S Logo"
+                style={{ display: 'block' }}
+                className="
+                  h-auto
+                  sm:w-[140px]
+                  md:w-[150px]
+                  lg:w-[217px]
+                "
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* 2) Mobile layout (< sm): unchanged */}
+        <div className="flex flex-col items-center w-full sm:hidden">
+          {/* Animation on its own line */}
+          <div className="flex justify-center w-full mt-4">
+            <Animation />
+          </div>
+
+          {/* Two logos side by side, bottom-aligned */}
+          <div className="flex items-end justify-around w-full mt-4">
             <a
               href="https://www.nurailcenter.org/"
               target="_blank"
@@ -15,32 +77,27 @@ const Header = () => {
             >
               <img
                 src="/NuRail_Presenting_Sponsor_2025.png"
-                width={258}
-                height={75}
                 alt="NuRail Logo"
-                style={{ display: 'block' }} // Ensure images don't reformat
+                style={{ display: 'block' }}
+                className="w-[140px] h-auto"
               />
             </a>
-          </div>
-          <div className="flex items-center justify-center flex-grow mt-12">
-            <Animation />
-          </div>
-          <div className="flex items-center">
             <a
               href="https://www.rtands.com/"
               target="_blank"
               rel="noopener noreferrer"
+              className="relative top-[-1px]"
             >
               <img
                 src="/RTS_Presenting_Sponsor_2025.png"
-                width={217}
-                height={75}
                 alt="RT&S Logo"
-                style={{ display: 'block' }} // Ensure images don't reformat
+                style={{ display: 'block' }}
+                className="w-[115px] h-auto"
               />
             </a>
           </div>
         </div>
+
       </div>
     </header>
   );
