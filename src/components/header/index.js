@@ -4,7 +4,7 @@ import Animation from '@/components/animations/anim2025HH';
 
 const Header = () => {
   return (
-    <header className="bg-white shadow sm:pb-8">
+    <header className="pb-8 bg-white shadow sm:pb-8"> {/* force padding on mobile too */}
       <div className="container px-4 mx-auto">
 
         {/* 1) Desktop/Tablet layout (≥ sm): single row, hidden on mobile */}

@@ -4,7 +4,7 @@ import IconsHH from '@/components/icons/iconsHH-nolink';
 import Intro from '@/components/intro';
 import CallForPapers from '@/components/call-for-papers';
 import Registration from '@/components/registration';
-import SponsorCTA2 from '@/components/sponsors/sponsor-cta-2'
+import SponsorCTA2 from '@/components/sponsors/sponsor-cta-2';
 import Reviews from '@/components/reviews';
 import InfoZoneSection from '@/components/infozone/infoZoneSection';
 import InterfaceJournal from '@/components/interface-journal';
@@ -28,7 +28,7 @@ export default function Home({ title, description, socialImage }) {
   return (
     <main className="bg-white">
       <Navigation />
-      <Banner25HH />
+        <Banner25HH />
       <IconsHH />
       <div className="pb-40 about-container font-wri" id="about">
         <h1 className="mt-2 mb-2 text-2xl font-extrabold text-center sm:text-5xl font-wri">
@@ -37,19 +37,25 @@ export default function Home({ title, description, socialImage }) {
         <h2 className="mb-6 text-3xl font-light text-center sm:text-5xl font-wri text-wri-red">
           Heavy Haul Conference
         </h2>
-        <h3 className="mt-12 mb-12 font-light text-center text-1xl sm:text-4xl font-wri">Speakers and agenda to be announced soon!</h3>
+        <h3 className="mt-12 mb-12 font-light text-center text-1xl sm:text-4xl font-wri">
+          Speakers and agenda to be announced soon!
+        </h3>
         <p className="mb-6 justify-left">
-        Welcome to the 30th Anniversary of the Wheel Rail Interaction Conference.{' '}
+          Welcome to the 30th Anniversary of the Wheel Rail Interaction
+          Conference.{' '}
           <span className="font-extrabold font-wri text-wri-red">
             WRI 2025 Heavy Haul Conference
           </span>{' '}
-          is specifically tailored for the heavy haul (freight) sector, focusing on the unique challenges and advancements in this area of the railroad industry. WRI 2025 Heavy Haul Conference will be held in{' '}
+          is specifically tailored for the heavy haul (freight) sector, focusing
+          on the unique challenges and advancements in this area of the railroad
+          industry. WRI 2025 Heavy Haul Conference will be held in{' '}
           <span className="font-extrabold font-wri">
             Kansas City, MO from June 10-12, 2025
           </span>
-          , and will focus on practical applications. Attendees will be from railroads including all the class 1 railroads, contractors, government regulators, researchers and consultants.
+          , and will focus on practical applications. Attendees will be from
+          railroads including all the class 1 railroads, contractors, government
+          regulators, researchers and consultants.
         </p>
-        
       </div>
       <Intro />
       <CallForPapers />
