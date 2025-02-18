@@ -11,10 +11,11 @@ import Image from 'next/image';
 export async function getStaticProps() {
   return {
     props: {
-      title: "WRI 2025 HH | Principles Course Speakers",
-      description: "Speakers for the 30th Annual Wheel/Rail Interaction Conference (WRI)",
-      socialImage: "/wri2025-hh-social.png"
-    }
+      title: 'WRI 2025 HH | Principles Course Speakers',
+      description:
+        'Speakers for the 30th Annual Wheel/Rail Interaction Conference (WRI)',
+      socialImage: '/wri2025-hh-social.png',
+    },
   };
 }
 
@@ -28,15 +29,6 @@ const PrinciplesCoursePage = () => {
       <IconsHH />
       <div className="section">
         <div className="mx-auto">
-          <h2 className="text-5xl font-normal text-center pb-11">
-            Meet the{' '}
-            <span className="text-wri-green">
-              <b>2025 Principles Course</b>
-            </span>{' '}
-            Speakers
-          </h2>
-          <SpeakersPCPreview />
-
           <div className="flex flex-wrap justify-center">
             <div className="w-full px-4 mx-auto mb-24 max-w-7xl">
               <div className="flex flex-wrap -mx-4">
@@ -55,26 +47,31 @@ const PrinciplesCoursePage = () => {
                     <span className="font-bold text-wri-green">
                       The Principles of Wheel/Rail Interaction course
                     </span>{' '}
-                    has been revitalized and reimagined with a tighter focus on the practical aspects
-                    of wheel/rail and vehicle/track interaction for 2025. The course will begin with
-                    a case study — an examination of an actual wheel/rail interaction-related derailment.
-                    Presenters will cover the fundamental aspects of track, vehicle suspension systems,
-                    damage mechanisms, measurements systems — all the topics we have traditionally covered —
-                    but will also connect the dots between theory and what actually happens in the field.
-                    A wrap-up session will review the causes attributed to the case study derailment in
-                    light of the Principles examined throughout the course. We’ll also look at approaches
-                    that can be taken to mitigate wheel/rail- and vehicle/track-related derailments in
-                    the future.
+                    has been revitalized and reimagined with a tighter focus on
+                    the practical aspects of wheel/rail and vehicle/track
+                    interaction for 2025. The course will begin with a case
+                    study — an examination of an actual wheel/rail
+                    interaction-related derailment. Presenters will cover the
+                    fundamental aspects of track, vehicle suspension systems,
+                    damage mechanisms, measurements systems — all the topics we
+                    have traditionally covered — but will also connect the dots
+                    between theory and what actually happens in the field. A
+                    wrap-up session will review the causes attributed to the
+                    case study derailment in light of the Principles examined
+                    throughout the course. We’ll also look at approaches that
+                    can be taken to mitigate wheel/rail- and
+                    vehicle/track-related derailments in the future.
                   </p>
 
                   {/* New NURail CoE paragraph & logo */}
                   <p className="pt-2 pb-4">
-                    Wheel Rail Seminars is proud to announce that the FRA-funded National University
-                    Rail Center for Excellence (NURail CoE) is the Presenting Sponsor for the 2025
-                    Principles of Wheel/Rail Interaction Course. You can find more information on the
-                    NURail CoE's mission to develop solutions that will lead to a safer, more efficient,
-                    sustainable, equitable, and reliable rail transportation system in the United States
-                    by{' '}
+                    Wheel Rail Seminars is proud to announce that the FRA-funded
+                    National University Rail Center for Excellence (NURail CoE)
+                    is the Presenting Sponsor for the 2025 Principles of
+                    Wheel/Rail Interaction Course. You can find more information
+                    on the NURail CoE's mission to develop solutions that will
+                    lead to a safer, more efficient, sustainable, equitable, and
+                    reliable rail transportation system in the United States by{' '}
                     <a
                       href="https://www.nurailcenter.org/"
                       target="_blank"
@@ -104,8 +101,9 @@ const PrinciplesCoursePage = () => {
                     WRI 2025 Discount Programs:
                   </h2>
                   <p className="pt-2 pb-6">
-                    Wheel Rail Seminars offers various discount programs, including Multi-Event Discounts
-                    and Special Employee Discounts for railroad, transit & government employees.
+                    Wheel Rail Seminars offers various discount programs,
+                    including Multi-Event Discounts and Special Employee
+                    Discounts for railroad, transit & government employees.
                   </p>
                   <p className="pt-2 pb-6">
                     <a
@@ -113,13 +111,13 @@ const PrinciplesCoursePage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Attendees praise the high-quality presenters & topics, and inclusive approach to
-                      dining and networking.
+                      Attendees praise the high-quality presenters & topics, and
+                      inclusive approach to dining and networking.
                     </a>
                   </p>
                   <p>
-                    NOTE: Attendance at Rail Transit or Heavy Haul seminars is NOT required to register
-                    for the Principles Course.
+                    NOTE: Attendance at Rail Transit or Heavy Haul seminars is
+                    NOT required to register for the Principles Course.
                   </p>
                 </div>
 
@@ -135,14 +133,17 @@ const PrinciplesCoursePage = () => {
                     <li>Full Line-up of Presentations</li>
                     <li>Afternoon Coffee and Refreshment Break</li>
                     <li>
-                      Exclusive Presentation Download Page access following the event
+                      Exclusive Presentation Download Page access following the
+                      event
                     </li>
                   </ul>
                   <h2 className="pt-6 pb-4 leading-tight seminar-header text-wri-green/90">
                     Attendees are also eligible to receive:
                   </h2>
                   <ul className="pl-5 list-disc seminar-list">
-                    <li>Continuing education/professional development credits</li>
+                    <li>
+                      Continuing education/professional development credits
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -152,6 +153,16 @@ const PrinciplesCoursePage = () => {
           </div>
         </div>
       </div>
+
+      <h2 className="text-5xl font-normal text-center pb-11">
+        Meet the{' '}
+        <span className="text-wri-green">
+          <b>2025 Principles Course</b>
+        </span>{' '}
+        Speakers
+      </h2>
+      <SpeakersPCPreview />
+
       <Registration />
       {/* <SponsorsCloud /> */}
     </main>
