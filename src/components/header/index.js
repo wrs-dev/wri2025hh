@@ -13,7 +13,7 @@ const Header = () => {
           {/* Left sponsor */}
           <div className="flex items-end">
             <a
-              href="https://www.nurailcenter.org/"
+              href="https://nurailcoe.railtec.illinois.edu/"
               target="_blank"
               rel="noopener noreferrer"
             >

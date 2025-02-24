@@ -73,7 +73,7 @@ const PrinciplesCoursePage = () => {
                     lead to a safer, more efficient, sustainable, equitable, and
                     reliable rail transportation system in the United States by{' '}
                     <a
-                      href="https://www.nurailcenter.org/"
+                      href="https://nurailcoe.railtec.illinois.edu/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 underline"
@@ -84,7 +84,7 @@ const PrinciplesCoursePage = () => {
                   </p>
                   <div className="flex justify-center mb-6">
                     <a
-                      href="https://www.nurailcenter.org/"
+                      href="https://nurailcoe.railtec.illinois.edu/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
