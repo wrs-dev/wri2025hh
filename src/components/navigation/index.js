@@ -116,10 +116,10 @@ export default function Navigation() {
                         <a
                           href={item.href}
                           className="block text-sm lg:text-xl text-wri-blue"
-                          target={item.isExternal ? '_blank' : undefined} // Conditionally set target attribute
+                          target={item.isExternal ? '_blank' : undefined}
                           rel={
                             item.isExternal ? 'noopener noreferrer' : undefined
-                          } // Best practice for security
+                          }
                         >
                           {item.name}
                           <span className="absolute inset-0" />
@@ -129,27 +129,21 @@ export default function Navigation() {
                     </div>
                   ))}
                   <div className="flex flex-col">
-                    {/*<div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
+                    <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
                       <a
-                        href="/register"
+                        href="https://wri2025rt.wheel-rail-seminars.com/#register"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="text-sm lg:text-xl text-wri-blue hover:text-wri-green"
                       >
-                        Register for WRI 2024
+                        Register for WRI2025 Rail Transit
                       </a>
                     </div>
                     <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
                       <a
-                        href="/#schedule"
-                        className="text-sm lg:text-xl text-wri-blue hover:text-wri-green"
-                      >
-                        WRI 2024 Schedule
-                      </a>
-                    </div>*/}
-                    <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
-                      <a
                         href="http://archive.wheel-rail-seminars.com/us/downloads.php"
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="text-sm lg:text-xl text-wri-blue hover:text-wri-green"
                       >
                         WRI Seminar Archives
@@ -160,14 +154,17 @@ export default function Navigation() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          {/*<a
+
+          {/* Now “Pricing” is uncommented */}
+          <a
             href="/#register"
             className={`text-sm leading-6 nav-link lg:text-xl ${
               isActive('/#register') ? 'text-wri-red' : 'text-wri-blue'
             }`}
           >
-            Package Pricing
-          </a>*/}
+            Pricing
+          </a>
+
           <a
             href="/#hotel"
             className={`text-sm leading-6 nav-link lg:text-xl ${
@@ -175,23 +172,8 @@ export default function Navigation() {
             }`}
           >
             Hotel Reservations
-          </a>{/*
-          <a
-            href="/sponsors#icons"
-            className={`text-sm leading-6 nav-link lg:text-xl ${
-              isActive('/sponsors') ? 'text-wri-red' : 'text-wri-blue'
-            }`}
-          >
-            Sponsors
           </a>
-          <a
-            href="/infozone#icons"
-            className={`text-sm leading-6 nav-link lg:text-xl ${
-              isActive('/infozone') ? 'text-wri-red' : 'text-wri-blue'
-            }`}
-          >
-            InfoZone
-          </a>*/}
+          {/* Other top-level links remain commented if desired */}
           <a
             href="/faq#icons"
             className={`text-sm leading-6 nav-link lg:text-xl ${
@@ -203,6 +185,7 @@ export default function Navigation() {
           <a
             href="http://wheel-rail-seminars.com/"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-sm leading-6 nav-link lg:text-xl text-wri-blue"
           >
             Wheel Rail Seminars
@@ -210,15 +193,19 @@ export default function Navigation() {
           <a
             href="http://www.interfacejournal.com/"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-sm leading-6 nav-link min-w-8 min-h-8 lg:text-xl"
           >
             <img
               src="/ij-icon.svg"
               className="w-8 h-8 pr-2"
               alt="Interface Journal"
-            />Interface Journal
+            />
+            Interface Journal
           </a>
         </Popover.Group>
+
+        {/* Mobile Menu */}
         <Dialog
           className="lg:hidden"
           open={mobileMenuOpen}
@@ -245,29 +232,11 @@ export default function Navigation() {
                   >
                     Home
                   </a>
-                  {/* <a
-                    href="/rail-transit-seminar#icons"
-                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
-                  >
-                    Rail Transit Seminar
-                  </a>
-                  <a
-                    href="/principles-course#icons"
-                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
-                  >
-                    Principles Course
-                  </a>
-                  <a
-                    href="/heavy-haul-seminar#icons"
-                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
-                  >
-                    Heavy Haul Seminar
-                  </a>
                   <a
                     href="/#register"
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
-                    Package Pricing
+                    Pricing
                   </a>
                   <a
                     href="/#hotel"
@@ -276,40 +245,23 @@ export default function Navigation() {
                     Hotel Reservations
                   </a>
                   <a
-                    href="/sponsors#sponsor"
-                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
-                  >
-                    Sponsors
-                  </a>
-                  <a
-                    href="/infozone#infozone"
-                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
-                  >
-                    InfoZone
-                  </a> */}
-                  <a
-                    href="/faq#faqs"
+                    href="/faq#icons"
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
                     FAQ
                   </a>
                   <a
-                    href="http://archive.wheel-rail-seminars.com/us/downloads.php"
+                    href="http://wheel-rail-seminars.com/"
                     target="_blank"
-                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
-                  >
-                    Archives
-                  </a>
-                  <a
-                    href="http://wheel-rail-seminars.com"
-                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
                     Wheel Rail Seminars
                   </a>
                   <a
-                    href="http://interfacejournal.com"
+                    href="http://www.interfacejournal.com/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
                     Interface Journal

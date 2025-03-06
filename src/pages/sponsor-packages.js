@@ -1,32 +1,31 @@
 import React from 'react';
-import Image from 'next/image';
 import Head from 'next/head';
-import Link from 'next/link';
-import Banner25HH from '@/components/banner/wri25HH-no-button';
 import Navigation from '@/components/navigation';
-import IconLinks from '@/components/icons';
-import SponsorCta from '@/components/sponsors/sponsor-cta';
+import Banner25RTNoButton from '@/components/banner/wri25RT-no-button';
+// If you actually need IconLinks or SponsorCta, import them here
 import SponsorsPackages from '@/components/sponsors/sponsorPackages';
 
-const sponsorPackages = () => {
+const SponsorPackagesRT = () => {
   return (
     <main className="bg-white">
       <Head>
-        <title>WRI 2025 Sponsorships</title>
+        <title>WRI 2025 RT Sponsorships</title>
       </Head>
       <Navigation />
-      <Banner25HH />
+      <Banner25RTNoButton />
+
       <div className="seminar-about-text" id="sponsor">
         <div className="pt-12 mx-auto">
-        {/* Main Headline */}
+          {/* Main Headline */}
           <h2 className="text-6xl font-bold leading-normal text-center pt-11">
-          WRI 2025 Sponsorships
+            WRI 2025 RT Sponsorships
           </h2>
         </div>
       </div>
+
       <SponsorsPackages />
     </main>
   );
 };
 
-export default sponsorPackages;
+export default SponsorPackagesRT;
