@@ -13,7 +13,7 @@ export async function getStaticProps() {
     props: {
       title: 'WRI 2025 HH | Principles Course Speakers',
       description:
-        'Speakers for the 30th Annual Wheel/Rail Interaction Conference (WRI)',
+        'Meet the Principles Course Speakers for the 30th Annual Wheel/Rail Interaction Conference (WRI)',
       socialImage: '/wri2025-hh-social.png',
     },
   };
