@@ -28,7 +28,7 @@ const BiosAbstractsHHPage = () => {
       <div className="seminar-about-text"></div>
       <BiosAbstractsHH />
       <Registration />
-      <SponsorsCloud />
+      {/*<SponsorsCloud />*/}
     </main>
   );
 };
