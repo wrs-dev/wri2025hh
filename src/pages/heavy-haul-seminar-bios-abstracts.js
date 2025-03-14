@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import Navigation from '@/components/navigation';
-import Banner from '@/components/banner';
-import IconLinks from '@/components/icons';
+import Banner25HH from '@/components/banner/wri25HH';
+import IconsHH from '@/components/icons/iconsHH';
 import BiosAbstractsHH from '@/components/bios-abstracts/bios-abstractsHH';
 import Registration from '@/components/registration';
 import SponsorsCloud from '@/components/sponsors';
@@ -23,8 +23,8 @@ const BiosAbstractsHHPage = () => {
   return (
     <main className="bg-white">
       <Navigation />
-      <Banner />
-      <IconLinks />
+      <Banner25HH />
+      <IconsHH />
       <div className="seminar-about-text"></div>
       <BiosAbstractsHH />
       <Registration />
