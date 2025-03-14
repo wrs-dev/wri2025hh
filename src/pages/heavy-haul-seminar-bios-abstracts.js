@@ -12,9 +12,9 @@ import SponsorsCloud from '@/components/sponsors';
 export async function getStaticProps() {
   return {
     props: {
-      title: "WRI 2024 | Heavy Haul Seminar Speaker Bios & Abstracts",
-      description: "Speaker Bios & Abstracts for the 29th Annual Wheel/Rail Interaction Conference (WRI)",
-      socialImage: "/wri2024-social.png" 
+      title: "WRI 2025 | Heavy Haul Seminar Speaker Bios & Abstracts",
+      description: "Speaker Bios & Abstracts for the 30th Annual Wheel/Rail Interaction Conference (WRI)",
+      socialImage: "/wri2025-social.png" 
     }
   };
 }
