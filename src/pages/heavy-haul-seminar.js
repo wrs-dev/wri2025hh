@@ -93,7 +93,7 @@ const HeavyHaulSeminarPage = () => {
                     <li>Luncheon served in the ExpoZone</li>
                     <li>Afternoon Coffee and Refreshment Breaks</li>
                     <li>
-                      Special “Grand Buffet” Reception on Thursday, May 23, 2024
+                    Special “Grand Buffet” Reception on Wednesday, June 11, 2025
                     </li>
                     <li>
                       Exclusive Presentation Download Page access following the
