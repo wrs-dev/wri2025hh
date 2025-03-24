@@ -30,8 +30,8 @@ export default function Navigation() {
     },
     {
       name: 'Heavy Haul Seminar',
-      description: 'Coming Soon',
-      href: '/E',
+      description: 'Preview Speakers',
+      href: '/heavy-haul-seminar#icons',
       icon: 'heavy-haul-icon.svg',
       background: 'bg-wri-red',
       isExternal: false,
@@ -66,6 +66,7 @@ export default function Navigation() {
           >
             Home
           </a>
+
           <Popover className="relative hidden md:flex">
             <Popover.Button
               className={`flex items-center text-sm leading-6 nav-link lg:text-xl ${
@@ -128,17 +129,52 @@ export default function Navigation() {
                       </div>
                     </div>
                   ))}
+
                   <div className="flex flex-col">
+                    {/* 1) Register for WRI2025 RT */}
                     <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
-                      <a
-                        href="https://wri2025rt.wheel-rail-seminars.com/#register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm lg:text-xl text-wri-blue hover:text-wri-green"
-                      >
-                        Register for WRI2025 Rail Transit
-                      </a>
+                      <div className="flex items-center justify-center flex-none rounded-lg h-11 w-11">
+                        <img
+                          src="/WRI25RT-icon.png"
+                          alt="WRI25RT Icon"
+                          className="object-cover w-full h-full rounded-lg"
+                        />
+                      </div>
+                      <div className="flex-auto">
+                        <a
+                          href="https://wri2025rt.wheel-rail-seminars.com/#register"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-sm lg:text-xl text-wri-blue hover:text-wri-green focus:outline-none focus:ring-0"
+                        >
+                          Register for WRI2025 Rail Transit
+                          <span className="absolute inset-0" />
+                        </a>
+                      </div>
                     </div>
+
+                    {/* 2) WRI 2024 Photo Gallery (now below WRI2025 link) */}
+                    <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
+                      <div className="flex items-center justify-center flex-none rounded-lg h-11 w-11">
+                        <img
+                          src="/2024-gallery-thumbnail.png"
+                          alt="WRI 2024 Photo Gallery"
+                          className="object-cover w-full h-full rounded-lg"
+                        />
+                      </div>
+                      <div className="flex-auto">
+                        <a
+                          href="https://wri2024-gallery.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-sm lg:text-xl text-wri-blue hover:text-wri-green focus:outline-none focus:ring-0"
+                        >
+                          WRI 2024 Photo Gallery
+                          <span className="absolute inset-0" />
+                        </a>
+                      </div>
+                    </div>
+
                     <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
                       <a
                         href="http://archive.wheel-rail-seminars.com/us/downloads.php"
@@ -155,7 +191,6 @@ export default function Navigation() {
             </Transition>
           </Popover>
 
-          {/* Now “Pricing” is uncommented */}
           <a
             href="/#register"
             className={`text-sm leading-6 nav-link lg:text-xl ${
@@ -173,7 +208,6 @@ export default function Navigation() {
           >
             Hotel Reservations
           </a>
-          {/* Other top-level links remain commented if desired */}
           <a
             href="/faq#icons"
             className={`text-sm leading-6 nav-link lg:text-xl ${
