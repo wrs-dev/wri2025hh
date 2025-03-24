@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import Navigation from '@/components/navigation'
-import Banner from '@/components/banner';
-import IconLinks from '@/components/icons';
+import Banner25HH from '@/components/banner/wri25HH';
+import IconsHH from '@/components/icons/iconsHH';
 import FocusTopicHH from '@/components/speakers/focusTopicHH';
 import SpeakersHH from '@/components/speakers/speakersHH';
 import Registration from '@/components/registration';
@@ -13,9 +13,9 @@ import SponsorsCloud from '@/components/sponsors';
 export async function getStaticProps() {
   return {
     props: {
-      title: "WRI 2024 | Heavy Haul Seminar Speakers",
-      description: "Meet the Heavy Haul speakers for the 29th Annual Wheel/Rail Interaction Conference (WRI)",
-      socialImage: "/wri2024-social.png" 
+      title: "WRI 2025 HH | Heavy Haul Seminar Speakers",
+      description: "Meet the Heavy Haul speakers for the 30th Annual Wheel/Rail Interaction Conference (WRI)",
+      socialImage: '/wri2025-hh-social.png',
     }
   };
 }
@@ -24,32 +24,22 @@ const HeavyHaulSeminarPage = () => {
   return (
     <main className="bg-white">
       <Navigation />
-      <Banner />
-      <IconLinks />
+      <Banner25HH />
+      <IconsHH />
       
       <div className="section">
         <div className="px-12 mx-auto">
-        <h2 className="text-5xl font-normal text-center pb-11">
-          Meet the{' '}
-          <span className="text-wri-red">
-            <b>2024 Heavy Haul Seminar</b>
-          </span>{' '}
-          Speakers
-        </h2>
-          <FocusTopicHH />
-          <SpeakersHH />
-
           <div className="flex flex-wrap justify-center">
             <div className="w-full mx-auto mb-24 max-w-7xl">
               <div className="flex flex-wrap -mx-4">
                 <div className="w-full px-4 mb-6 lg:w-4/6 lg:pr-24">
                 <h2 className="text-5xl font-normal leading-normal text-center">
                     <span className="text-wri-red">
-                      <b>2024 Heavy Haul Seminar</b>
+                      <b>2025 Heavy Haul Seminar</b>
                     </span>
                   </h2>
                   <h3 className="text-3xl font-normal leading-normal text-center pb-11">
-                    May 23-24, 2024
+                    June 11-12, 2025
                   </h3>
                   <p className="pt-2 pb-6">
                     <span className="font-bold text-wri-red">
@@ -72,7 +62,7 @@ const HeavyHaulSeminarPage = () => {
                   </p>
 
                   <h2 className="mt-16 seminar-discount-header">
-                    WRI 2024 Discount Programs:
+                    WRI 2025 Discount Programs:
                   </h2>
                   <p className="pt-2 pb-6">
                     Wheel Rail Seminars offers various discount programs,
@@ -103,7 +93,7 @@ const HeavyHaulSeminarPage = () => {
                     <li>Luncheon served in the ExpoZone</li>
                     <li>Afternoon Coffee and Refreshment Breaks</li>
                     <li>
-                      Special “Grand Buffet” Reception on Thursday, May 23, 2024
+                    Special “Grand Buffet” Reception on Wednesday, June 11, 2025
                     </li>
                     <li>
                       Exclusive Presentation Download Page access following the
@@ -126,9 +116,18 @@ const HeavyHaulSeminarPage = () => {
           </div>
         </div>
       </div>
+      <h2 className="text-5xl font-normal text-center pb-11">
+          Meet the{' '}
+          <span className="text-wri-red">
+            <b>2025 Heavy Haul Seminar</b>
+          </span>{' '}
+          Speakers
+        </h2>
+          {/*<FocusTopicHH />*/}
+          <SpeakersHH />
 
       <Registration />
-      <SponsorsCloud />
+      {/*<SponsorsCloud />*/}
     </main>
   );
 };

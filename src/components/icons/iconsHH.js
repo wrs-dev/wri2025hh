@@ -9,7 +9,7 @@ const IconLinksHH = () => {
   const icons = useMemo(
     () => [
       {
-        href: '#',
+        href: 'principles-course',
         src: '/principles-icon.svg',
         title: 'Principles Course',
         date: 'June 10, 2025',
@@ -17,7 +17,7 @@ const IconLinksHH = () => {
         hoverBgColor: 'hover:bg-wri-green',
       },
       {
-        href: '#',
+        href: 'heavy-haul-seminar',
         src: '/heavy-haul-icon.svg',
         title: 'Heavy Haul Seminar',
         date: 'June 11-12, 2025',
@@ -30,11 +30,13 @@ const IconLinksHH = () => {
 
   const getRestingBackgroundColor = useMemo(() => {
     if (router.pathname.includes('principles-course')) {
-      return ['bg-wri-green', 'bg-wri-neutral']; // Green always visible, red neutral
+      return ['bg-wri-green', 'bg-wri-neutral'];
     } else if (router.pathname.includes('heavy-haul')) {
-      return ['bg-wri-neutral', 'bg-wri-red']; // Red always visible, green neutral
+      return ['bg-wri-neutral', 'bg-wri-red'];
     }
-    return ['bg-wri-neutral', 'bg-wri-neutral']; // Default to all neutral
+  
+    // Default for ALL other routes (including '/')
+    return ['bg-wri-green', 'bg-wri-red'];
   }, [router.pathname]);
 
   return (

@@ -15,7 +15,7 @@ export default function Navigation() {
       if (path === '/') {
         return router.pathname === path; // Exact match for the root path
       }
-      return router.pathname.startsWith(path); // Prefix match for all other paths
+      return router.pathname.startsWith(path); // Prefix match for other paths
     });
   };
 
@@ -30,8 +30,8 @@ export default function Navigation() {
     },
     {
       name: 'Heavy Haul Seminar',
-      description: 'Coming Soon',
-      href: '/E',
+      description: 'Preview Speakers',
+      href: '/heavy-haul-seminar#icons',
       icon: 'heavy-haul-icon.svg',
       background: 'bg-wri-red',
       isExternal: false,
@@ -44,6 +44,7 @@ export default function Navigation() {
         className="flex items-center justify-center w-full px-4 mx-auto bg-white lg:px-8 md:px-10"
         aria-label="Global"
       >
+        {/* Mobile Menu Button */}
         <div className="flex lg:hidden">
           {!mobileMenuOpen && (
             <button
@@ -58,6 +59,7 @@ export default function Navigation() {
         </div>
 
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
+          {/* Home Link */}
           <a
             href="/"
             className={`text-sm leading-6 nav-link lg:text-xl ${
@@ -66,6 +68,8 @@ export default function Navigation() {
           >
             Home
           </a>
+
+          {/* WRI Seminars Popover */}
           <Popover className="relative hidden md:flex">
             <Popover.Button
               className={`flex items-center text-sm leading-6 nav-link lg:text-xl ${
@@ -87,6 +91,7 @@ export default function Navigation() {
                 aria-hidden="true"
               />
             </Popover.Button>
+
             <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
@@ -98,6 +103,7 @@ export default function Navigation() {
             >
               <Popover.Panel className="absolute z-10 w-screen max-w-md mt-3 overflow-hidden bg-white shadow-lg rounded-3xl ring-1 ring-gray-900/5">
                 <div className="p-4">
+                  {/* Seminar Links */}
                   {links.map((item) => (
                     <div
                       key={item.name}
@@ -128,17 +134,31 @@ export default function Navigation() {
                       </div>
                     </div>
                   ))}
+
                   <div className="flex flex-col">
+                    {/* WRI25RT Icon Link */}
                     <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
-                      <a
-                        href="https://wri2025rt.wheel-rail-seminars.com/#register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm lg:text-xl text-wri-blue hover:text-wri-green"
-                      >
-                        Register for WRI2025 Rail Transit
-                      </a>
+                      <div className="flex items-center justify-center flex-none rounded-lg h-11 w-11">
+                        <img
+                          src="/WRI25RT-icon.png"
+                          alt="WRI25RT Icon"
+                          className="object-cover w-full h-full rounded-lg"
+                        />
+                      </div>
+                      <div className="flex-auto">
+                        <a
+                          href="https://wri2025rt.wheel-rail-seminars.com/#register"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-sm lg:text-xl text-wri-blue hover:text-wri-green focus:outline-none focus:ring-0"
+                        >
+                          Visit WRI2025 Rail Transit
+                          <span className="absolute inset-0" />
+                        </a>
+                      </div>
                     </div>
+
+                    {/* WRI Seminar Archives */}
                     <div className="relative flex items-center p-4 text-sm rounded-lg group gap-x-6 hover:bg-sky-100">
                       <a
                         href="http://archive.wheel-rail-seminars.com/us/downloads.php"
@@ -155,7 +175,19 @@ export default function Navigation() {
             </Transition>
           </Popover>
 
-          {/* Now “Pricing” is uncommented */}
+          {/* NEW: Photo Gallery link in main nav (after WRI Seminars) */}
+          <a
+            href="https://wri2024-gallery.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-sm leading-6 nav-link lg:text-xl text-wri-blue ${
+              isActive('/photo-gallery') ? 'text-wri-red' : 'text-wri-blue'
+            }`}
+          >
+            Photo Gallery
+          </a>
+
+          {/* Remaining Main Nav Links */}
           <a
             href="/#register"
             className={`text-sm leading-6 nav-link lg:text-xl ${
@@ -173,7 +205,6 @@ export default function Navigation() {
           >
             Hotel Reservations
           </a>
-          {/* Other top-level links remain commented if desired */}
           <a
             href="/faq#icons"
             className={`text-sm leading-6 nav-link lg:text-xl ${
@@ -226,6 +257,7 @@ export default function Navigation() {
             <div className="flow-root mt-6">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="py-6 space-y-2">
+                  {/* Mobile Links */}
                   <a
                     href="/"
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
@@ -265,6 +297,15 @@ export default function Navigation() {
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
                     Interface Journal
+                  </a>
+                  {/* Photo Gallery in Mobile Menu */}
+                  <a
+                    href="https://wri2024-gallery.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
+                  >
+                    Photo Gallery
                   </a>
                 </div>
               </div>
