@@ -147,7 +147,7 @@ export default function Navigation() {
                           rel="noopener noreferrer"
                           className="block text-sm lg:text-xl text-wri-blue hover:text-wri-green focus:outline-none focus:ring-0"
                         >
-                          Register for WRI2025 Rail Transit
+                          Visit WRI2025 Rail Transit
                           <span className="absolute inset-0" />
                         </a>
                       </div>
