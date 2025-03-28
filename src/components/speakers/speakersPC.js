@@ -12,7 +12,7 @@ const Storyblok = new StoryblokClient({
 
 const MotionBox = motion.div;
 
-const SpeakerCard = ({ name, company, imageSrc, topic, bioLink }) => {
+const SpeakerCard = ({ name, company, imageSrc, title, bioLink }) => {
   // Ensure imageUrl in Storyblok matches the name of the photo (firstname-lastname.jpg)
 
   return (
