@@ -91,7 +91,7 @@ const BiosAbstractsPC = () => {
             name: story.content.name,
             company: story.content.company,
             imageSrc: story.content.imageSrc,
-            // 'title' is removed since we're no longer displaying it
+            title: story.content.title,
             bio1: story.content.bio1,
             bio2: story.content.bio2,
           };
