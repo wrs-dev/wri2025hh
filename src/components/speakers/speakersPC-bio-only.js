@@ -57,20 +57,8 @@ const SpeakerCard = ({ name, company, imageSrc, topic, bioLink }) => {
       </div>
       <div className="flex justify-center mx-10 my-6 mb-6 sm:my-2 xl:mt-6">
         <Link href={bioLink}>
-          <div className="inline-flex items-center justify-between w-full h-full">
-            <div className="text-sm text-wri-mid-blue md:text-xl lg:text-2xl">
-              {topic}
-            </div>
-            <div className="flex-shrink-0">
-              <MotionBox
-                whileHover={{
-                  x: [0, 10, 0],
-                  transition: { ease: 'linear', duration: 1, repeat: Infinity },
-                }}
-              >
-                <ChevronDoubleRightIcon className="w-8 h-full text-wri-green lg:w-16" />
-              </MotionBox>{' '}
-            </div>
+          <div className="px-12 py-6 text-2xl text-center text-white cursor-pointer rounded-xl hover:text-wri-dark-blue hover:shadow-xl bg-wri-green whitespace-nowrap">
+            Biography
           </div>
         </Link>
       </div>
