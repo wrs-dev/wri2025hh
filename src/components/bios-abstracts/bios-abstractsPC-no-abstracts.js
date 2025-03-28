@@ -22,7 +22,7 @@ const generateSlug = (fullName) => {
 };
 
 // Speaker card component (removed the 'title' prop and references to keep only picture, name/company, and bio)
-const SpeakerCard = ({ name, company, imageSrc, bio1, bio2 }) => {
+const SpeakerCard = ({ name, company, imageSrc, title, bio1, bio2 }) => {
   const slug = generateSlug(name);
 
   return (
@@ -48,7 +48,7 @@ const SpeakerCard = ({ name, company, imageSrc, bio1, bio2 }) => {
         </div>
       </div>
       <div className="w-full md:w-3/5 md:mx-12 xl:mt-8">
-        {/* Removed the <h3> title here to keep only bio */}
+      <h3 className="mb-2 text-xl font-bold">{title}</h3>
         <div className="flex flex-col gap-8 lg:mr-20">
           <p>{bio1}</p>
           <p>{bio2}</p>
