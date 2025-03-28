@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navigation from '@/components/navigation';
 import Banner25HH from '@/components/banner/wri25HH';
 import IconsHH from '@/components/icons/iconsHH';
-import SpeakersPCPreview from '@/components/speakers/speakersPC-no-links';
+import SpeakersPCPreview from '@/components/speakers/speakersPC-bio-only';
 import Registration from '@/components/registration';
 // import SponsorsCloud from '@/components/sponsors'; // commented out in original code
 import Head from 'next/head';
