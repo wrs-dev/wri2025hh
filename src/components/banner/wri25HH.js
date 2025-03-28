@@ -5,7 +5,7 @@ const Banner2025HH = () => {
   return (
     <section className="relative w-full min-h-[350px] sm:min-h-[500px]">
       <Image
-        src="/kansas-city-skyline.webp"
+        src="/kansas-city-skyline-1500x500-30th.webp"
         alt="home-banner"
         fill
         className="object-cover"
