@@ -3,12 +3,12 @@ import RegisterButton from '@/components/buttons/register-button';
 
 const Banner2025RT = () => {
   return (
-    <section className="relative w-full" style={{ paddingTop: '33.33%' }}>
+    <section className="relative w-full min-h-[350px] sm:min-h-[500px]">
       {' '}
       {/* 33.33% padding for 1500x500 aspect ratio */}
       <div className="absolute inset-0">
         <Image
-          src="/kansas-city-skyline.webp"
+          src="/kansas-city-skyline-1500x500-30th-v2.webp"
           alt="home-banner"
           layout="fill" // This makes the image cover the entire div
           className="object-cover w-full h-full" // Tailwind classes for responsiveness and coverage
