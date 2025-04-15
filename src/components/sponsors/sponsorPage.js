@@ -44,8 +44,8 @@ const goldSponsors = [
   {
     name: 'Gateway Rail Services',
     description: '',
-    imagePath: '/gold-gateway-rail.png', // MISSING
-    url: '', // MISSING
+    imagePath: '/gold-gateway-rail-services.png',
+    url: 'https://gatewayrailservices.com/',
   },
   {
     name: 'Wabtec',
