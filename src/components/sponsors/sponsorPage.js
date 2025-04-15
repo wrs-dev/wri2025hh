@@ -52,6 +52,14 @@ const goldSponsors = [
     description: '',
     imagePath: '/silver-wabtec.png',
     url: 'https://www.wabteccorp.com/',
+    extraClass: 'mb-4', // 👈 add this
+  },
+  {
+    name: 'ENSCO',
+    description: '',
+    imagePath: '/platinum-ensco.jpg',
+    url: 'https://www.ensco.com/rail',
+    extraClass: 'mb-4', // 👈 add this
   },
 ];
 
@@ -59,7 +67,7 @@ const silverSponsors = [
   {
     name: 'Getzner',
     description: '',
-    imagePath: '/silver-getzner.png',
+    imagePath: '/getzner-logo.png',
     url: 'https://www.getzner.com/en',
   },
 ];
@@ -88,7 +96,7 @@ export default function SponsorPage() {
         <div className="px-6 mx-auto mb-24 max-w-7xl lg:px-8">
           <div className="grid max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
-              <span className="text-wri-blue">PEARL</span> sponsors
+              <span className="text-wri-pearl-gold">PEARL MILESTONE</span> sponsor
             </h2>
             <div className="flex flex-col col-span-2">
               {pearlSponsors.map((sponsor) => (
@@ -176,9 +184,11 @@ export default function SponsorPage() {
                       <img
                         src={sponsor.imagePath}
                         alt={sponsor.name}
-                        className="max-h-20 img-fill-contain"
+                        className={`max-h-20 img-fill-contain ${sponsor.extraClass || ''}`}
                       />
                     </div>
+                  </dt>
+                  <dd className="mt-1 text-base leading-7">
                     <a
                       href={sponsor.url}
                       target="_blank"
@@ -187,9 +197,7 @@ export default function SponsorPage() {
                     >
                       Visit {sponsor.name} website
                     </a>
-                  </dt>
-                  <dd className="mt-1 text-base leading-7 ">
-                    {sponsor.description}
+                    {sponsor.description && <p>{sponsor.description}</p>}
                   </dd>
                 </div>
               ))}

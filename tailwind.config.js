@@ -30,6 +30,7 @@ module.exports = {
         'wri-yellow': '#FDB913', 
         'wri-gray': '#3B4245',
         'wri-neutral': '#d1d1d1',
+        'wri-pearl-gold': '#d09a3e',
       },
       animation: {
         'fade-in': 'fade-in 0.5s linear forwards',
