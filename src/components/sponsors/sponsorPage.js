@@ -195,7 +195,7 @@ export default function SponsorPage() {
                       rel="noopener noreferrer"
                       className="hover:underline"
                     >
-                      Visit {sponsor.name} website
+                      Visit the {sponsor.name} website
                     </a>
                     {sponsor.description && <p>{sponsor.description}</p>}
                   </dd>
@@ -232,7 +232,7 @@ export default function SponsorPage() {
                         rel="noopener noreferrer"
                         className="block hover:underline"
                       >
-                        Visit {sponsor.name} website
+                        Visit the {sponsor.name} website
                       </a>
                     </dd>
                   </div>
@@ -269,7 +269,7 @@ export default function SponsorPage() {
                       rel="noopener noreferrer"
                       className="block hover:underline"
                     >
-                      Visit {sponsor.name}'s website
+                      Visit the {sponsor.name}'s website
                     </a>
                   </dd>
                 </div>
