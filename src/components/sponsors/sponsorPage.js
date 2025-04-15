@@ -269,7 +269,7 @@ export default function SponsorPage() {
                       rel="noopener noreferrer"
                       className="block hover:underline"
                     >
-                      Visit the {sponsor.name}'s website
+                      Visit the {sponsor.name} website
                     </a>
                   </dd>
                 </div>
