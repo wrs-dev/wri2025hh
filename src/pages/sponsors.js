@@ -6,21 +6,22 @@ import Navigation from '@/components/navigation';
 import IconLinks from '@/components/icons';
 import SponsorCta from '@/components/sponsors/sponsor-cta';
 import SponsorsPage from '@/components/sponsors/sponsorPage';
-import Banner from '@/components/banner';
+import Banner25HH from '@/components/banner/wri25HH';
+import IconsHH from '@/components/icons/iconsHH';
 
 const sponsors = () => {
   return (
     <main className="bg-white">
       <Head>
-        <title>WRI 2024 || Sponsor</title>
+        <title>WRI 2025 HH || Sponsor</title>
       </Head>
       <Navigation />
-      <Banner />
-      <IconLinks />
+      <Banner25HH />
+      <IconsHH />
       <div className="seminar-about-text" id="sponsor">
         <div className="px-12 mx-auto">
           <h2 className="text-6xl font-normal leading-normal text-center pt-11">
-            Thank you to our <b>WRI 2024</b> Sponsors
+            Thank you to our <b>WRI 2025 HH</b> Sponsors
           </h2>
         </div>
       </div>
