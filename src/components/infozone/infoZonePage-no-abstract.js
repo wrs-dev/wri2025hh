@@ -7,7 +7,7 @@ const infoZoneSponsors = [
     name: 'BosPac',
     description: '',
     imagePath: '/bosspac-logo.svg',
-    url: '',
+    url: 'https://bosspac.com/',
   },
   {
     name: 'Plasser American',
@@ -19,7 +19,7 @@ const infoZoneSponsors = [
     name: 'Linsinger',
     description: '',
     imagePath: '/silver-linsinger.png',
-    url: '',
+    url: 'https://www.linsinger.com/',
   },
   {
     name: 'Loram',
