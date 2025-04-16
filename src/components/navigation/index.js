@@ -205,6 +205,14 @@ export default function Navigation() {
             Sponsors
           </a>
           <a
+            href="/infozone#icons"
+            className={`text-sm leading-6 nav-link lg:text-xl ${
+              isActive('/infozone') ? 'text-wri-red' : 'text-wri-blue'
+            }`}
+          >
+            InfoZone
+          </a>
+          <a
             href="/#hotel"
             className={`text-sm leading-6 nav-link lg:text-xl ${
               isActive('#hotel') ? 'text-wri-red' : 'text-wri-blue'
@@ -282,6 +290,12 @@ export default function Navigation() {
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
                     Sponsors
+                  </a>
+                  <a
+                    href="/infozone#infozone"
+                    className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
+                  >
+                    InfoZone
                   </a>
                   <a
                     href="/#hotel"
