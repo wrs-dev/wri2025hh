@@ -52,20 +52,20 @@ const goldSponsors = [
     description: '',
     imagePath: '/silver-wabtec.png',
     url: 'https://www.wabteccorp.com/',
-    extraClass: 'mb-4', // 👈 add this
+    extraClass: 'mb-4', // 👈 added xtra bottom margin
   },
   {
     name: 'ENSCO',
     description: '',
     imagePath: '/platinum-ensco.jpg',
     url: 'https://www.ensco.com/rail',
-    extraClass: 'mb-4', // 👈 add this
+    extraClass: 'mb-4', // 👈 added xtra bottom margin
   },
   {
     name: 'Amsted Rail',
     description:
       '',
-    imagePath: '/platinum-amstead-rail.png',
+    imagePath: '/gold-amstead-rail.png',
     url: 'https://www.amstedrail.com/',
   },
 ];
