@@ -61,6 +61,13 @@ const goldSponsors = [
     url: 'https://www.ensco.com/rail',
     extraClass: 'mb-4', // 👈 add this
   },
+  {
+    name: 'Amsted Rail',
+    description:
+      '',
+    imagePath: '/platinum-amstead-rail.png',
+    url: 'https://www.amstedrail.com/',
+  },
 ];
 
 const silverSponsors = [
