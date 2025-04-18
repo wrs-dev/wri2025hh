@@ -88,9 +88,16 @@ const bronzeSponsors = [
   },
   {
     name: 'LB Foster',
-    description: 'Providing rail and infrastructure solutions that include rail products, friction management, and transit systems.',
-    imagePath: '/silver-lbfoster.png',
+    description: '',
+    imagePath: '/bronze-lbfoster.png',
     url: 'https://lbfoster.com/',
+  },
+  {
+    name: 'Fuchs',
+    description: '',
+    imagePath: '/bronze-fuchs.png',
+    url: 'https://www.fuchs.com/group/',
+    extraClass: 'h-[125px]',
   },
 ];
 
@@ -191,7 +198,7 @@ export default function SponsorPage() {
                       <img
                         src={sponsor.imagePath}
                         alt={sponsor.name}
-                        className={`max-h-20 img-fill-contain ${sponsor.extraClass || ''}`}
+                        className={`img-fill-contain ${sponsor.extraClass || 'max-h-20'}`}
                       />
                     </div>
                   </dt>
@@ -261,11 +268,11 @@ export default function SponsorPage() {
               {bronzeSponsors.map((sponsor) => (
                 <div key={sponsor.name}>
                   <dt className="text-base font-semibold leading-7 text-black">
-                    <div className="flex items-center h-20">
+                    <div className={`flex items-center ${sponsor.extraClass ? '' : 'h-20'}`}>
                       <img
                         src={sponsor.imagePath}
                         alt={sponsor.name}
-                        className="max-h-20 img-fill-contain"
+                      className={`img-fill-contain ${sponsor.extraClass ? sponsor.extraClass : 'max-h-20'}`}
                       />
                     </div>
                   </dt>
