@@ -96,7 +96,7 @@ const bronzeSponsors = [
     name: 'Fuchs',
     description: '',
     imagePath: '/bronze-fuchs.png',
-    url: 'https://www.fuchs.com/group/',
+    url: 'https://www.fuchs.com/us/en/',
     extraClass: 'h-[125px]',
   },
 ];
