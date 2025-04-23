@@ -267,7 +267,7 @@ export default function SponsorPackages() {
           </div>
         </section>
 
-        {/* InfoZone Partner */}
+        {/* InfoZone Partner 
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
@@ -295,7 +295,6 @@ export default function SponsorPackages() {
                 received great reviews from participants and InfoZone Partners alike.
               </p>
 
-              {/* Updated content starts here */}
               <p className="mt-4 font-semibold">Your Organization will receive:</p>
               <ul className="ml-6 list-disc">
                 <li className="mb-2">
@@ -337,7 +336,6 @@ export default function SponsorPackages() {
                   </ul>
                 </li>
               </ul>
-              {/* Updated content ends here */}
 
               <div className="mt-4">
                 <SponsorRegisterButtonInfoZone />
@@ -345,7 +343,7 @@ export default function SponsorPackages() {
             </div>
           </div>
         </section>
-
+*/}
         {/* * Double InfoZone Partner 
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
