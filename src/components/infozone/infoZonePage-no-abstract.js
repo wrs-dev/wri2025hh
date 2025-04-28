@@ -27,6 +27,12 @@ const infoZoneSponsors = [
     imagePath: '/platinum-loram.svg',
     url: 'https://loram.com/',
   },
+  {
+    name: 'KONUX',
+    description: '',
+    imagePath: '/konux.png',
+    url: 'https://www.konux.com/',
+  },
 ];
 
 export default function InfoZonePage() {
@@ -76,22 +82,64 @@ export default function InfoZonePage() {
 
       {/* Sponsors Section */}
       <section>
-        <div className="px-6 mx-auto mb-48 max-w-7xl lg:px-8">
-          <div className="grid grid-cols-2 gap-y-12 gap-x-12 justify-items-center">
-            {[infoZoneSponsors[0], infoZoneSponsors[2], infoZoneSponsors[1], infoZoneSponsors[3]].map((sponsor) => (
+        <div className="px-6 mx-auto mb-48 space-y-12 max-w-7xl lg:px-8">
+          {/* Top Row */}
+          <div className="flex items-center justify-center gap-x-20">
+            <a
+              key={infoZoneSponsors[3].name}
+              href={infoZoneSponsors[3].url || '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-36"
+            >
+              <img
+                src={infoZoneSponsors[3].imagePath}
+                alt={`${infoZoneSponsors[3].name} logo`}
+                className="object-contain h-16"
+              />
+            </a>
+            <a
+              key={infoZoneSponsors[2].name}
+              href={infoZoneSponsors[2].url || '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-32"
+            >
+              <img
+                src={infoZoneSponsors[2].imagePath}
+                alt={`${infoZoneSponsors[2].name} logo`}
+                className="object-contain h-24"
+              />
+            </a>
+            <a
+              key={infoZoneSponsors[4].name}
+              href={infoZoneSponsors[4].url || '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center h-36"
+            >
+              <img
+                src={infoZoneSponsors[4].imagePath}
+                alt={`${infoZoneSponsors[4].name} logo`}
+                className="object-contain h-36"
+              />
+            </a>
+          </div>
+
+          {/* Bottom Row */}
+          <div className="flex items-center justify-center gap-x-20">
+            {[infoZoneSponsors[0], infoZoneSponsors[1]].map((sponsor) => (
               <a
                 key={sponsor.name}
                 href={sponsor.url || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-full h-32"
+                className="flex items-center justify-center h-36"
               >
                 <img
                   src={sponsor.imagePath}
                   alt={`${sponsor.name} logo`}
-                  className={`object-contain ${
-                    sponsor.name === 'Linsinger' ? 'h-28' : 'h-16'
-                  }`}
+                  className="object-contain h-12"
                 />
               </a>
             ))}
