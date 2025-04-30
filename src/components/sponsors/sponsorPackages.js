@@ -267,7 +267,7 @@ export default function SponsorPackages() {
           </div>
         </section>
 
-        {/* InfoZone Partner 
+        {/* InfoZone Partner
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">
             <div>
@@ -343,7 +343,8 @@ export default function SponsorPackages() {
             </div>
           </div>
         </section>
-*/}
+        /*}
+
         {/* * Double InfoZone Partner 
         <section className="mb-16">
           <div className="grid grid-cols-1 gap-y-4 lg:grid-cols-3 lg:gap-8">

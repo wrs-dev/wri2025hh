@@ -218,7 +218,7 @@ export default function Navigation() {
               isActive('#hotel') ? 'text-wri-red' : 'text-wri-blue'
             }`}
           >
-            Hotel Reservations
+            Hotel
           </a>
           <a
             href="/faq#icons"
@@ -247,7 +247,7 @@ export default function Navigation() {
               className="w-8 h-8 pr-2"
               alt="Interface Journal"
             />
-            Interface Journal
+            IJ
           </a>
         </Popover.Group>
 
@@ -301,7 +301,7 @@ export default function Navigation() {
                     href="/#hotel"
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
-                    Hotel Reservations
+                    Hotel
                   </a>
                   <a
                     href="/faq#icons"
@@ -323,7 +323,7 @@ export default function Navigation() {
                     rel="noopener noreferrer"
                     className="block py-2 text-sm font-semibold leading-7 lg:text-xl text-wri-blue hover:bg-gray-50"
                   >
-                    Interface Journal
+                    IJ
                   </a>
                   {/* Photo Gallery in Mobile Menu */}
                   <a

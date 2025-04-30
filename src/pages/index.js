@@ -72,7 +72,7 @@ export default function Home({ title, description, socialImage }) {
         </div>
       </section>
       <Hotel />
-      {/*<SponsorsCloud />*/}
+      <SponsorsCloud />
     </main>
   );
 }
