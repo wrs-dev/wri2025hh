@@ -57,16 +57,21 @@ const goldSponsors = [
   {
     name: 'ENSCO',
     description: '',
-    imagePath: '/platinum-ensco.jpg',
+    imagePath: '/platinum-ensco-nospace.jpg',
     url: 'https://www.ensco.com/rail',
     extraClass: 'mb-4', // 👈 added xtra bottom margin
   },
   {
     name: 'Amsted Rail',
-    description:
-      '',
+    description: '',
     imagePath: '/gold-amstead-rail.png',
     url: 'https://www.amstedrail.com/',
+  },
+  {
+    name: 'HBK',
+    description: '',
+    imagePath: '/gold-hbk-logo.png',
+    url: 'https://www.hbkworld.com/en/solutions/industries/automotive-ground-transportation/rail',
   },
 ];
 
@@ -198,7 +203,15 @@ export default function SponsorPage() {
                       <img
                         src={sponsor.imagePath}
                         alt={sponsor.name}
-                        className={`img-fill-contain ${sponsor.extraClass || 'max-h-20'}`}
+                        className={`img-fill-contain ${
+                          sponsor.name === 'Holland' ? 'h-24' :
+                          sponsor.name === 'Gateway Rail Services' ? 'h-24' :
+                          sponsor.name === 'Wabtec' ? 'h-20' :
+                          sponsor.name === 'ENSCO' ? 'h-20' :
+                          sponsor.name === 'Amsted Rail' ? 'h-20' :
+                          sponsor.name === 'HBK' ? 'h-24' :
+                          'max-h-20'
+                        }`}
                       />
                     </div>
                   </dt>
