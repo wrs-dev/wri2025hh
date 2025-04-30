@@ -285,7 +285,12 @@ export default function SponsorPage() {
                       <img
                         src={sponsor.imagePath}
                         alt={sponsor.name}
-                      className={`img-fill-contain ${sponsor.extraClass ? sponsor.extraClass : 'max-h-20'}`}
+                        className={`img-fill-contain ${
+                          sponsor.name === 'LB Foster' ? 'h-14' :
+                          sponsor.name === 'Fuchs' ? 'h-20' :
+                          sponsor.extraClass ? sponsor.extraClass :
+                          'max-h-20'
+                        }`}
                       />
                     </div>
                   </dt>
