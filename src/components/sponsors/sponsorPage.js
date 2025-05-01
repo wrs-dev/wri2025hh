@@ -82,6 +82,12 @@ const silverSponsors = [
     imagePath: '/getzner-logo.png',
     url: 'https://www.getzner.com/en',
   },
+  {
+    name: 'GMT International',
+    description: '',
+    imagePath: '/gmt-international.svg',
+    url: 'https://www.gmt-international.com/',
+  },
 ];
 
 const bronzeSponsors = [
