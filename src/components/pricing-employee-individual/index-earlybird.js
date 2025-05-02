@@ -18,7 +18,8 @@ export default function PricingEmployeeIndividual() {
             </h2>
             <h2 className="text-md text-wri-blue">
               Cost:
-              <span className="ml-2 mr-1">$450</span>
+              <span className="ml-2 mr-1 text-gray-500 line-through">$450</span>
+              $405 Early Bird
             </h2>
             <p className="text-gray-500 text-md">June 10, 2025</p>
           </div>
@@ -28,11 +29,12 @@ export default function PricingEmployeeIndividual() {
             </h2>
             <h2 className="text-md text-wri-blue">
               Cost:
-              <span className="ml-2 mr-1">$1,000</span>
+              <span className="ml-2 mr-1 text-gray-500 line-through">
+                $1,000
+              </span>
+              $900 Early Bird
             </h2>
-            <p className="text-gray-500 text-md">
-              June 11-12, 2025
-            </p>
+            <p className="text-gray-500 text-md">June 11-12, 2025</p>
           </div>
         </div>
       </div>
