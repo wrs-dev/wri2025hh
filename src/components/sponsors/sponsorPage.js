@@ -85,7 +85,7 @@ const silverSponsors = [
   {
     name: 'GMT International',
     description: '',
-    imagePath: '/gmt-international.svg',
+    imagePath: '/new-gmt-international.png',
     url: 'https://www.gmt-international.com/',
   },
 ];
