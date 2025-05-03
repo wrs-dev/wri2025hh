@@ -18,8 +18,7 @@ export default function PricingProfessionalMulti() {
             </h2>
             <h2 className="text-md text-wri-blue">
               Cost:
-              <span className="ml-2 mr-1 text-gray-500 line-through">$1,600</span>
-              $1,440 Early Bird
+              <span className="ml-2 mr-1">$1,600 (Save $200)</span>
             </h2>
             <p className="text-gray-500 text-md">June 10-12, 2025</p>
           </div>

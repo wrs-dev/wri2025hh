@@ -18,8 +18,7 @@ export default function PricingProfessionalIndividual() {
             </h2>
             <h2 className="text-md text-wri-blue">
               Cost:
-              <span className="ml-2 mr-1 text-gray-500 line-through">$600</span>
-              $540 Early Bird
+              <span className="ml-2 mr-1">$600</span>
             </h2>
             <p className="text-gray-500 text-md">June 10, 2025</p>
           </div>
@@ -29,8 +28,7 @@ export default function PricingProfessionalIndividual() {
             </h2>
             <h2 className="text-md text-wri-blue">
               Cost:
-              <span className="ml-2 mr-1 text-gray-500 line-through">$1,200</span>
-              $1,080 Early Bird
+              <span className="ml-2 mr-1">$1,200</span>
             </h2>
             <p className="text-gray-500 text-md">
               June 11-12, 2025
