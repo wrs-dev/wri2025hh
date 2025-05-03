@@ -126,7 +126,7 @@ const RegistrationComp = () => {
             <RegisterButton />
           </div>
 
-          {/* CVirtual Pricing centered below the two columns */}
+          {/* Virtual Pricing centered below the two columns 
           <div className="flex justify-center mt-8">
             <div className="flex flex-col w-full px-4 mb-4 md:w-3/4 xl:w-1/2">
               <div className="px-0 lg:px-12">
@@ -146,7 +146,7 @@ const RegistrationComp = () => {
                 <RegisterButton />
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
