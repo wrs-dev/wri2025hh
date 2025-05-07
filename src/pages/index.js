@@ -1,6 +1,7 @@
 import Navigation from '@/components/navigation';
 import Banner25HH from '@/components/banner/wri25HH';
 import IconsHH from '@/components/icons/iconsHH';
+import AgendaButton from '@/components/buttons/agenda-download-button';
 import Intro from '@/components/intro';
 import CallForPapers from '@/components/call-for-papers';
 import Registration from '@/components/registration';
@@ -33,6 +34,9 @@ export default function Home({ title, description, socialImage }) {
         Click on the buttons below to review speakers, topics and abstracts for each seminar!
         </h3>
       <IconsHH />
+      <div className="flex justify-center mb-12">
+        <AgendaButton />
+      </div>
       <div className="pb-40 about-container font-wri" id="about">
         <h1 className="mt-2 mb-2 text-2xl font-extrabold text-center sm:text-5xl font-wri">
           Welcome to WRI <span className="font-light font-wri">2025</span> HH{' '}
