@@ -11,21 +11,21 @@ const infoZoneSponsors = [
   },
   {
     name: 'Linsinger',
-    url: '#linsinger',
+    url: 'https://www.linsinger.com/',
     logo: '/silver-linsinger.png',
     alt: 'Linsinger logo',
     heightClass: 'h-24',
   },
   {
     name: 'KONUX',
-    url: '#konux',
+    url: 'https://www.konux.com/',
     logo: '/konux.png',
     alt: 'KONUX logo',
     heightClass: 'h-36',
   },
   {
     name: 'BossPac Technologies',
-    url: '#bosspac',
+    url: 'https://bosspac.com/',
     logo: '/bosspac-logo.svg',
     alt: 'BossPac Technologies logo',
     heightClass: 'h-12',
@@ -88,7 +88,7 @@ export default function InfoZonePage() {
               </a>
             </div>
             <div className="flex items-center justify-center w-1/3">
-              <a href={infoZoneSponsors[1].url}>
+              <a href={infoZoneSponsors[1].url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={infoZoneSponsors[1].logo}
                   alt={infoZoneSponsors[1].alt}
@@ -97,7 +97,7 @@ export default function InfoZonePage() {
               </a>
             </div>
             <div className="flex items-center justify-center w-1/3">
-              <a href={infoZoneSponsors[2].url}>
+              <a href={infoZoneSponsors[2].url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={infoZoneSponsors[2].logo}
                   alt={infoZoneSponsors[2].alt}
@@ -109,23 +109,13 @@ export default function InfoZonePage() {
           <div className="flex justify-center gap-24">
             {infoZoneSponsors.slice(3).map(({ name, url, logo, alt, heightClass }) => (
               <div key={name} className="flex items-center justify-center w-1/2">
-                {name === 'BossPac Technologies' ? (
-                  <a href={url}>
-                    <img
-                      src={logo}
-                      alt={alt}
-                      className={`object-contain ${heightClass}`}
-                    />
-                  </a>
-                ) : (
-                  <a href={url} target="_blank" rel="noopener noreferrer">
-                    <img
-                      src={logo}
-                      alt={alt}
-                      className={`object-contain ${heightClass}`}
-                    />
-                  </a>
-                )}
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={logo}
+                    alt={alt}
+                    className={`object-contain ${heightClass}`}
+                  />
+                </a>
               </div>
             ))}
           </div>
