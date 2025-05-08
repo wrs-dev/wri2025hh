@@ -146,10 +146,10 @@ export default function InfoZonePage() {
           <div className="flex items-start justify-center hidden mt-4 ml-4 md:justify-start md:block md:col-span-1">
             <a href="https://www.linsinger.com/" target="_blank" rel="noopener noreferrer">
               <Image
-                src="/silver-linsinger.png"
+                src="/linsinger-trans.png"
                 alt="Linsinger Logo"
-                width={200}
-                height={100}
+                width={180}
+                height={90}
               />
             </a>
           </div>
