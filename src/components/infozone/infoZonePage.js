@@ -11,21 +11,21 @@ const infoZoneSponsors = [
   },
   {
     name: 'Linsinger',
-    url: 'https://www.linsinger.com/',
+    url: '#linsinger',
     logo: '/silver-linsinger.png',
     alt: 'Linsinger logo',
     heightClass: 'h-24',
   },
   {
     name: 'KONUX',
-    url: 'https://www.konux.com/',
+    url: '#konux',
     logo: '/konux.png',
     alt: 'KONUX logo',
     heightClass: 'h-36',
   },
   {
     name: 'BossPac Technologies',
-    url: 'https://bosspac.com/',
+    url: '#bosspac',
     logo: '/bosspac-logo.svg',
     alt: 'BossPac Technologies logo',
     heightClass: 'h-12',
@@ -88,7 +88,7 @@ export default function InfoZonePage() {
               </a>
             </div>
             <div className="flex items-center justify-center w-1/3">
-              <a href={infoZoneSponsors[1].url} target="_blank" rel="noopener noreferrer">
+              <a href={infoZoneSponsors[1].url}>
                 <img
                   src={infoZoneSponsors[1].logo}
                   alt={infoZoneSponsors[1].alt}
@@ -97,7 +97,7 @@ export default function InfoZonePage() {
               </a>
             </div>
             <div className="flex items-center justify-center w-1/3">
-              <a href={infoZoneSponsors[2].url} target="_blank" rel="noopener noreferrer">
+              <a href={infoZoneSponsors[2].url}>
                 <img
                   src={infoZoneSponsors[2].logo}
                   alt={infoZoneSponsors[2].alt}
@@ -109,7 +109,7 @@ export default function InfoZonePage() {
           <div className="flex justify-center gap-24">
             {infoZoneSponsors.slice(3).map(({ name, url, logo, alt, heightClass }) => (
               <div key={name} className="flex items-center justify-center w-1/2">
-                <a href={url} target="_blank" rel="noopener noreferrer">
+                <a href={url} {...(url.startsWith('https://') ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
                   <img
                     src={logo}
                     alt={alt}
@@ -144,12 +144,14 @@ export default function InfoZonePage() {
             <h3 className="mt-4 text-2xl font-bold">Linsinger Abstract</h3>
           </div>
           <div className="flex items-start justify-center hidden mt-4 ml-4 md:justify-start md:block md:col-span-1">
-            <Image
-              src="/silver-linsinger.png"
-              alt="Linsinger Logo"
-              width={200}
-              height={100}
-            />
+            <a href="https://www.linsinger.com/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/silver-linsinger.png"
+                alt="Linsinger Logo"
+                width={200}
+                height={100}
+              />
+            </a>
           </div>
           <div className="pb-4 pr-4 md:col-span-4">
             <p className="text-lg font-semibold">Title: Rail Maintenance Strategies in North America.</p>
@@ -174,12 +176,14 @@ export default function InfoZonePage() {
             <h3 className="mt-4 text-2xl font-bold">KONUX Abstract</h3>
           </div>
           <div className="flex items-start justify-center hidden mt-4 ml-4 md:justify-start md:block md:col-span-1">
-            <Image
-              src="/konux.png"
-              alt="KONUX Logo"
-              width={200}
-              height={100}
-            />
+            <a href="https://www.konux.com/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/konux.png"
+                alt="KONUX Logo"
+                width={200}
+                height={100}
+              />
+            </a>
           </div>
           <div className="pb-4 pr-4 md:col-span-4">
             <p className="text-lg">
@@ -200,12 +204,14 @@ export default function InfoZonePage() {
           </div>
           {/* Bottom-left block: logo */}
           <div className="flex items-start justify-center hidden mt-4 ml-4 md:justify-start md:block md:col-span-1">
-            <Image
-              src="/bosspac-logo.svg"
-              alt="Bosspac Logo"
-              width={200}
-              height={100}
-            />
+            <a href="https://bosspac.com/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/bosspac-logo.svg"
+                alt="Bosspac Logo"
+                width={200}
+                height={100}
+              />
+            </a>
           </div>
           {/* Bottom-right block: paragraphs */}
           <div className="pb-4 pr-4 md:col-span-4">
