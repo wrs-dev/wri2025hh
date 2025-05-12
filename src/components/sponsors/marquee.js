@@ -125,6 +125,36 @@ const LogoRow = () => {
           width={130}
           height={65}
         />
+        <Link href="https://www.hbkworld.com/en/solutions/industries/automotive-ground-transportation/rail" target="_blank">
+          <Image
+            src="/marquee-hbk.png"
+            alt="Gold Sponsor HBK"
+            className="w-auto h-[65px] max-h-[65px] max-w-none"
+            loading="lazy"
+            width={200}
+            height={65}
+          />
+        </Link>
+        <Link href="https://www.gmt-gmbh.com/en" target="_blank">
+          <Image
+            src="/new-gmt-international.png"
+            alt="Silver Sponsor GMT"
+            className="w-auto h-[50px] max-h-[50px] max-w-none"
+            loading="lazy"
+            width={180}
+            height={50}
+          />
+        </Link>
+        <Link href="https://www.konux.com/" target="_blank">
+          <Image
+            src="/marquee-konux.png"
+            alt="Sponsor Konux"
+            className="w-auto h-[60px] max-h-[60px] max-w-none"
+            loading="lazy"
+            width={240}
+            height={60}
+          />
+        </Link>
       </div>
     </div>
   );

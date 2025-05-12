@@ -132,7 +132,7 @@ const RegistrationComp = () => {
           {/* Virtual and Student Columns */}
           <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-1 xl:grid-cols-2">
             {/* Virtual Column */}
-            <div className="flex flex-col px-4 mb-4">
+            <div className="flex flex-col justify-between h-full px-4 mb-4">
               <div className="px-0 lg:px-12">
                 <h3 className="mb-8 text-4xl font-bold text-center text-white">
                   Virtual Option
@@ -144,12 +144,16 @@ const RegistrationComp = () => {
                   Attendees registering for more than one event will receive special Multi-Event Discounts.
                 </p>
               </div>
-              <PricingVirtualIndividual />
-              <PricingVirtualMulti />
+              <div>
+                <div className="mb-4">
+                  <PricingVirtualIndividual />
+                </div>
+                <PricingVirtualMulti />
+              </div>
             </div>
 
             {/* Student Column */}
-            <div className="flex flex-col px-4 mb-4">
+            <div className="flex flex-col justify-between h-full px-4 mb-4">
               <div className="px-0 lg:px-12">
                 <h3 className="mb-8 text-4xl font-bold text-center text-white">
                   Student Registration
@@ -161,8 +165,12 @@ const RegistrationComp = () => {
                   Please use the Student Registration button to sign up.
                 </p>
               </div>
-              <PricingStudentIndividual />
-              <PricingStudentMulti />
+              <div>
+                <div className="mb-4">
+                  <PricingStudentIndividual />
+                </div>
+                <PricingStudentMulti />
+              </div>
             </div>
           </div>
 

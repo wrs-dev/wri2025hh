@@ -29,7 +29,7 @@ const BiosAbstractsPCPage = () => {
       <div className="seminar-about-text"></div>
       <BiosAbstractsPC />
       <Registration />
-      {/*<SponsorsCloud />*/}
+      <SponsorsCloud />
     </main>
   );
 };
