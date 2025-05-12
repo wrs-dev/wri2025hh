@@ -4,7 +4,7 @@ import Banner25HH from '@/components/banner/wri25HH';
 import IconsHH from '@/components/icons/iconsHH';
 import SpeakersPCPreview from '@/components/speakers/speakersPC-bio-only';
 import Registration from '@/components/registration';
-// import SponsorsCloud from '@/components/sponsors'; // commented out in original code
+import SponsorsCloud from '@/components/sponsors';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -162,9 +162,8 @@ const PrinciplesCoursePage = () => {
         Speakers
       </h2>
       <SpeakersPCPreview />
-
       <Registration />
-      {/* <SponsorsCloud /> */}
+      <SponsorsCloud />
     </main>
   );
 };

@@ -127,7 +127,7 @@ const HeavyHaulSeminarPage = () => {
           <SpeakersHH />
 
       <Registration />
-      {/*<SponsorsCloud />*/}
+      <SponsorsCloud />
     </main>
   );
 };
