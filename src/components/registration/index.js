@@ -5,7 +5,10 @@ import PricingProfessionalIndividual from '@/components/pricing-professional-ind
 import PricingProfessionalMulti from '@/components/pricing-professional-multi';
 import PricingVirtualIndividual from '@/components/pricing-virtual-individual';
 import PricingVirtualMulti from '@/components/pricing-virtual-multi';
+import PricingStudentIndividual from '@/components/pricing-student-individual';
+import PricingStudentMulti from '@/components/pricing-student-multi';
 import RegisterButton from '@/components/buttons/register-button';
+import StudentRegisterButton from '@/components/buttons/student-register-button';
 
 const useCountdown = targetDate => {
   const countDownDate = new Date(targetDate).getTime();
@@ -126,9 +129,10 @@ const RegistrationComp = () => {
             <RegisterButton />
           </div>
 
-          {/* Virtual Pricing centered below the two columns */}
-          <div className="flex justify-center mt-8">
-            <div className="flex flex-col w-full px-4 mb-4 md:w-3/4 xl:w-1/2">
+          {/* Virtual and Student Columns */}
+          <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-1 xl:grid-cols-2">
+            {/* Virtual Column */}
+            <div className="flex flex-col px-4 mb-4">
               <div className="px-0 lg:px-12">
                 <h3 className="mb-8 text-4xl font-bold text-center text-white">
                   Virtual Option
@@ -142,9 +146,32 @@ const RegistrationComp = () => {
               </div>
               <PricingVirtualIndividual />
               <PricingVirtualMulti />
-              <div className="mt-12 mb-12 text-center lg:mb-0">
-                <RegisterButton />
+            </div>
+
+            {/* Student Column */}
+            <div className="flex flex-col px-4 mb-4">
+              <div className="px-0 lg:px-12">
+                <h3 className="mb-8 text-4xl font-bold text-center text-white">
+                  Student Registration
+                </h3>
+                <p className="pb-4 mb-6 text-center text-white">
+                  Student Pricing is available exclusively through the link below.
+                </p>
+                <p className="mb-10 text-center text-white">
+                  Please use the Student Registration button to sign up.
+                </p>
               </div>
+              <PricingStudentIndividual />
+              <PricingStudentMulti />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 mt-12 mb-12 text-center md:grid-cols-1 xl:grid-cols-2">
+            <div>
+              <RegisterButton />
+            </div>
+            <div>
+              <StudentRegisterButton />
             </div>
           </div>
         </div>
