@@ -73,6 +73,12 @@ const goldSponsors = [
     imagePath: '/gold-hbk-logo.png',
     url: 'https://www.hbkworld.com/en/solutions/industries/automotive-ground-transportation/rail',
   },
+  {
+    name: 'One Rail Group',
+    description: '',
+    imagePath: '/gold-one-rail-group.jpg',
+    url: 'https://onerailgroup.com/',
+  },
 ];
 
 const silverSponsors = [
@@ -216,6 +222,7 @@ export default function SponsorPage() {
                           sponsor.name === 'ENSCO' ? 'h-20' :
                           sponsor.name === 'Amsted Rail' ? 'h-20' :
                           sponsor.name === 'HBK' ? 'h-24' :
+                          sponsor.name === 'One Rail Group' ? 'h-24' :
                           'max-h-20'
                         }`}
                       />
