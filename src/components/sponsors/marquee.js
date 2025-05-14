@@ -155,6 +155,16 @@ const LogoRow = () => {
             height={60}
           />
         </Link>
+        <Link href="https://onerailgroup.com/" target="_blank">
+          <Image
+            src="/gold-one-rail-group.jpg"
+            alt="Gold Sponsor One Rail Group"
+            className="w-auto h-[65px] max-h-[65px] max-w-none"
+            loading="lazy"
+            width={202}
+            height={65}
+          />
+        </Link>
       </div>
     </div>
   );
