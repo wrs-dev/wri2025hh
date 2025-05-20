@@ -55,7 +55,7 @@ export default function Hotel() {
             </p>
             <p className="text-base mb-3.5">
               Reservations must be received on or before the cut-off date of
-              Monday, May 28, 2025. Once our room block is full, you may not be
+              Wednesday, May 28, 2025. Once our room block is full, you may not be
               able to receive our special rate.
             </p>
             <p className="text-base mb-3.5">
