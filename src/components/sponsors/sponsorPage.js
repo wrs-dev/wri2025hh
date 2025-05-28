@@ -103,7 +103,7 @@ const silverSponsors = [
   {
     name: 'Interface Journal',
     description: '',
-    imagePath: '/ij-logo-small.svg',
+    imagePath: '/ij-logo.png',
     url: 'https://interfacejournal.com/',
   },
 ];
