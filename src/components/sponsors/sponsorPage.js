@@ -100,6 +100,12 @@ const silverSponsors = [
     imagePath: '/silver-gfelti.svg',
     url: 'https://www.gfelti.com/it',
   },
+  {
+    name: 'Interface Journal',
+    description: '',
+    imagePath: '/ij-logo-small.svg',
+    url: 'https://interfacejournal.com/',
+  },
 ];
 
 const bronzeSponsors = [
@@ -267,7 +273,9 @@ export default function SponsorPage() {
                           src={sponsor.imagePath}
                           alt={sponsor.name}
                           className={`img-fill-contain ${
-                            sponsor.name === 'GFelti' ? 'h-[60px]' : 'max-h-14'
+                            sponsor.name === 'GFelti' ? 'h-[60px]' :
+                            sponsor.name === 'Interface Journal' ? 'w-[250px]' :
+                            'max-h-14'
                           }`}
                         />
                       </div>
