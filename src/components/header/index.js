@@ -34,7 +34,6 @@ const Header = () => {
 
           {/* Center animation */}
           <div className="flex items-end justify-center flex-grow">
-            {/* Removed lg:mt-12 to keep the bottom aligned with the logos */}
             <Animation />
           </div>
 
