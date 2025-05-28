@@ -94,6 +94,12 @@ const silverSponsors = [
     imagePath: '/new-gmt-international.png',
     url: 'https://www.gmt-international.com/',
   },
+  {
+    name: 'GFelti',
+    description: '',
+    imagePath: '/silver-gfelti.svg',
+    url: 'https://www.gfelti.com/it',
+  },
 ];
 
 const bronzeSponsors = [
@@ -261,7 +267,9 @@ export default function SponsorPage() {
                         <img
                           src={sponsor.imagePath}
                           alt={sponsor.name}
-                          className="max-h-14 img-fill-contain"
+                          className={`img-fill-contain ${
+                            sponsor.name === 'GFelti' ? 'h-[60px]' : 'max-h-14'
+                          }`}
                         />
                       </div>
                     </dt>
