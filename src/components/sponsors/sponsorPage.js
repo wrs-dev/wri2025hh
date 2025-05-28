@@ -165,12 +165,11 @@ export default function SponsorPage() {
       {/* Platinum Sponsor Section */}
       <section>
         <div className="px-6 mx-auto mb-24 max-w-7xl lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-16 sm:gap-y-20 lg:gap-8">
-            <h2 className="col-span-1 mt-12 text-3xl font-bold tracking-tight text-black sm:text-4xl">
+          <div className="grid max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">
               <span className="text-zinc-500">PLATINUM</span> sponsors
             </h2>
-            <div className="col-span-2 lg:col-span-2">
-              {/* Map over the rest of the platinum sponsors */}
+            <dl className="grid grid-cols-1 col-span-2 gap-x-8 gap-y-16 sm:grid-cols-1">
               {platinumSponsors.map((sponsor) => (
                 <div key={sponsor.name} className="flex flex-col mb-8">
                   <div className="mb-4">
@@ -202,7 +201,7 @@ export default function SponsorPage() {
                   )}
                 </div>
               ))}
-            </div>
+            </dl>
           </div>
         </div>
       </section>
