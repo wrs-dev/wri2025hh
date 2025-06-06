@@ -32,7 +32,7 @@ const infoZoneSponsors = [
   },
   {
     name: 'Plasser American',
-    url: 'https://www.plasseramerican.com/en/home/start',
+    url: '#plasser-american',
     logo: '/platinum-plasser-american.svg',
     alt: 'Plasser American logo',
     heightClass: 'h-12',
@@ -221,6 +221,42 @@ export default function InfoZonePage() {
           </div>
         </div>
       </section>
-    </div>
+    {/* Plasser American Abstract Section */}
+    <section className="px-6 mx-auto mb-24 max-w-7xl lg:px-8">
+      <div id="plasser-american" className="grid grid-cols-1 gap-4 p-4 mb-12 md:grid-cols-5 bg-wri-yellow/20 rounded-xl">
+        {/* Top-left block: empty */}
+        <div className="hidden md:block md:col-span-1"></div>
+        {/* Top-right block: heading */}
+        <div className="md:col-span-4">
+          <h3 className="mt-4 text-2xl font-bold">Plasser American Abstract</h3>
+        </div>
+        {/* Bottom-left block: logo */}
+        <div className="flex items-start justify-center hidden mt-4 ml-4 md:justify-start md:block md:col-span-1">
+          <a href="https://www.plasseramerican.com/en/home/start" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/platinum-plasser-american.svg"
+              alt="Plasser American Logo"
+              width={200}
+              height={100}
+            />
+          </a>
+        </div>
+        {/* Bottom-right block: paragraphs */}
+        <div className="pb-4 pr-4 md:col-span-4">
+          <p className="text-lg font-semibold">From Contact Patches to Network Health</p>
+          <p className="mt-4 text-lg">
+            To achieve the important task of Rail Network Health, it is necessary to counter the effects of wheel/rail contact (patches) though suitable rail maintenance approaches.
+            This Infozone will analyze how different rail degradation signatures will not simply require “a grinding train” but call for an integrated machine design with optimized machine components from the grinding stones up to the machine exhaust.
+          </p>
+          <p className="mt-4 text-lg">
+            This task also requires smart and seamless integration of such an optimized grinding machine into the rail life optimization loop. This is achieved through an integrated process with advanced measurement technology, real time data handling and analysis capabilities, smart work execution and transparent documentation/QC.
+          </p>
+          <p className="pb-4 mt-4 text-lg">
+            Only then it is possible to provide defined and well documented rail conditions in both mainline track and special trackwork.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
   );
 }
