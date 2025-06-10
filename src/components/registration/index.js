@@ -46,7 +46,8 @@ const useCountdown = targetDate => {
 };
 
 const RegistrationComp = () => {
-  const { days, hours, minutes, seconds } = useCountdown('2025-06-10T00:00:00');
+  // const { days, hours, minutes, seconds } = useCountdown('2025-06-10T00:00:00');
+  const days = 0, hours = 0, minutes = 0, seconds = 0;
 
   return (
     <section className="py-12 register-now">
