@@ -9,7 +9,7 @@ const Storyblok = new StoryblokClient({
   region: 'us',
 });
 
-const SpeakerCard = ({ name, company, imageSrc, topic, bioLink }) => {
+const SpeakerCard = ({ name, company, imageSrc, topic, bioLink, pdfFileName }) => {
   // Ensure imageUrl in Storyblok matches the name of the photo (firstname-lastname.jpg)
 
   return (
@@ -51,7 +51,7 @@ const SpeakerCard = ({ name, company, imageSrc, topic, bioLink }) => {
             Bio & Abstract
           </div>
         </Link>
-        <Link href={`/pdfs/2025/${generateSlug(name)}.pdf`} target="_blank">
+        <Link href={`/pdfs/2025/${pdfFileName}`} target="_blank">
           <div className="px-8 py-4 text-lg font-semibold text-center text-white rounded-lg bg-wri-red hover:bg-red-700">
             Presentation PDF
           </div>
@@ -111,6 +111,7 @@ const SpeakersHH = () => {
                 bioLink={`/heavy-haul-seminar-bios-abstracts#bio-${generateSlug(
                   speaker.name,
                 )}`}
+                pdfFileName={speaker.pdfFileName}
               />
             ))}
           </div>
